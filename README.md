@@ -1,1 +1,1 @@
-# -ng-d-ng-website-chia-s-ki-n-th-c-l-p-tr-nh-thu-t-to-n
+Ứng dụng website chia sẻ kiến thức lập trình, thuật toán
