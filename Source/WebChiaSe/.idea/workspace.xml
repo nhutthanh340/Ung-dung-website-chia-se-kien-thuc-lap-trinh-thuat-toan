@@ -2,261 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50f8fe68-4290-43d7-a606-a0646750fd14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/WebChiaSe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/_about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/_about.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/_courses.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/_courses.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/_feature.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/_feature.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/_price.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/_price.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/breadcrumb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/breadcrumb.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/banner/banner-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/banner/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/banner/home-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/banner/shap-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/banner/shap-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/add.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/author.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/c1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/c2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/c3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/c4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/c5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/c6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/cat-post/cat-post-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/cat-post/cat-post-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/cat-post/cat-post-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/causes/causes-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/causes/causes-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/causes/causes-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/feature-img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/main-blog/m-blog-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/main-blog/m-blog-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/main-blog/m-blog-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/main-blog/m-blog-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/main-blog/m-blog-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/next.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/popular-post/post1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/popular-post/post2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/popular-post/post3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/popular-post/post4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/post-img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/post-img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/blog/prev.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/clients-logo/c-logo-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/clients-logo/c-logo-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/clients-logo/c-logo-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/clients-logo/c-logo-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/clients-logo/c-logo-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/courses/course-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/courses/course-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/courses/course-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/courses/course-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/courses/course-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/courses/course-details.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/_DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/a2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/disabled-check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/disabled-radio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/f1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/f2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/f3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/f4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/f5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/f6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/f7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/f8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/g1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/g2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/g3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/g4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/g5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/g6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/g7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/g8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/primary-check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/primary-radio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/success-check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/success-radio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/user1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/elements/user2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/icon/video-icon-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/instagram/Image-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/instagram/Image-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/instagram/Image-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/instagram/Image-04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/instagram/Image-05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/instagram/Image-06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/instagram/Image-07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/instagram/Image-08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/latest-blog/l-blog-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/latest-blog/l-blog-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/latest-blog/l-blog-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/latest-blog/l-blog-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/notify-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/team/team-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/team/team-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/team/team-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/team/team-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/testimonials/testi-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/testimonials/testi-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/testimonials/testi-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/testimonials/testi-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/video-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/gmaps.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.ajaxchimp.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/mail-script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/stellar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/_DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/css/_DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/css/normalize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/fonts/_DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/js/_DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/js/jquery-1.11.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/js/jquery.nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/_DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shAutoloader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushAS3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushAppleScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushBash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushCSharp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushColdFusion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushCpp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushCss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushDelphi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushDiff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushErlang.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushGroovy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushJScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushJava.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushJavaFX.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushPerl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushPhp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushPlain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushPowerShell.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushPython.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushRuby.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushSass.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushScala.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushSql.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushVb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shBrushXml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shCore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/scripts/shLegacy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shCore.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shCoreDefault.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shCoreDjango.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shCoreEclipse.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shCoreEmacs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shCoreFadeToGrey.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shCoreMDUltra.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shCoreMidnight.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shCoreRDark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shThemeDefault.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shThemeDjango.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shThemeEclipse.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shThemeEmacs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shThemeFadeToGrey.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shThemeMDUltra.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shThemeMidnight.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/learnit-doc/syntax-highlighter/styles/shThemeRDark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_about.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_blog.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_clients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_courses.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_elements.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_feature.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_predefine.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_price.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_team.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_testimonials.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scss/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/animate-css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/animate-css/wow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/bootstrap-datepicker/bootstrap-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/bootstrap-datepicker/bootstrap-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/counter-up/jquery.counterup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/counter-up/jquery.waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/isotope/imagesloaded.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/isotope/isotope.pkgd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/jquery-ui/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/jquery-ui/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/lightbox/simpleLightbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/lightbox/simpleLightbox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/linericon/fonts/Linearicons-Free.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/linericon/fonts/Linearicons-Free.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/linericon/fonts/Linearicons-Free.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/linericon/fonts/Linearicons-Free.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/linericon/fonts/Linearicons-Free.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/linericon/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/nice-select/css/nice-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/nice-select/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/nice-select/js/jquery.nice-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/nice-select/js/jquery.nice-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/owl-carousel/assets/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/owl-carousel/assets/animated.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/owl-carousel/assets/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/owl-carousel/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/owl-carousel/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/popup/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendors/popup/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/about-us.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/blog.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/contact.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/contact_process.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/course-details.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/courses.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/elements.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/index.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/prepros-6.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/single-blog.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/BaiDangController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/BaiVietController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/NguoiDungController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/TheLoaiController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/BaiDang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/BaiViet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/NguoiDung.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/TheLoaiBaiViet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -271,44 +28,32 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/BaiViet.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/about-us.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="94" column="55" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/models/NguoiDung.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/blog.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6144">
-              <caret line="365" column="66" selection-start-line="365" selection-start-column="66" selection-end-line="365" selection-end-column="66" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/models/TheLoaiBaiViet.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/contact.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1520">
-              <caret line="93" column="49" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/course-details.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1554">
-              <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/models/BaiDang.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -321,38 +66,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/elements.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1503">
-              <caret line="92" column="47" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/index.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2380">
-              <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="151" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/vendors/popup/magnific-popup.css">
+        <entry file="file://$PROJECT_DIR$/controllers/BaiDangController.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/single-blog.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6161">
-              <caret line="366" column="66" selection-start-line="366" selection-start-column="66" selection-end-line="366" selection-end-column="66" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/controllers/BaiVietController.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/NguoiDungController.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/TheLoaiController.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -373,6 +113,17 @@
         <option value="$PROJECT_DIR$/views/elements.hbs" />
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/views/single-blog.html" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/models/BaiViet.js" />
+        <option value="$PROJECT_DIR$/models/NguoiDdung.js" />
+        <option value="$PROJECT_DIR$/models/LoaiNguoiDung.js" />
+        <option value="$PROJECT_DIR$/models/TheLoaiBaiViet.js" />
+        <option value="$PROJECT_DIR$/models/BaiDang.js" />
+        <option value="$PROJECT_DIR$/controllers/BaiDangController.js" />
+        <option value="$PROJECT_DIR$/controllers/BaiVietController.js" />
+        <option value="$PROJECT_DIR$/controllers/NguoiDungController.js" />
+        <option value="$PROJECT_DIR$/controllers/TheLoaiController.js" />
       </list>
     </option>
   </component>
@@ -398,12 +149,17 @@
             <path>
               <item name="WebChiaSe" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebChiaSe" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebChiaSe" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebChiaSe" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebChiaSe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebChiaSe" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -465,19 +221,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558176884607</updated>
-      <workItem from="1558176887270" duration="1651000" />
+      <workItem from="1558176887270" duration="3294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1651000" />
+    <option name="totallyTimeSpent" value="3294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="npm" sideWeight="0.502439" side_tool="true" visible="true" weight="0.25" />
+      <window_info id="npm" sideWeight="0.11463415" side_tool="true" visible="true" weight="0.25" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.88536584" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
@@ -485,7 +242,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.64648116" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -515,9 +272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/about-us.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1598">
@@ -546,13 +300,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/courses.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/elements.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1503">
@@ -573,6 +320,54 @@
           <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="151" selection-end-column="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/BaiViet.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/NguoiDung.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/LoaiNguoiDung.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/TheLoaiBaiViet.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/BaiDang.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/courses.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/BaiDangController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/BaiVietController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/NguoiDungController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/TheLoaiController.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
