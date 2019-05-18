@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50f8fe68-4290-43d7-a606-a0646750fd14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/BaiDangController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/BaiVietController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/NguoiDungController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/TheLoaiController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/BaiDang.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/BaiViet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/NguoiDung.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/TheLoaiBaiViet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/error.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about-us.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/about-us.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/blog.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/contact.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/course-details.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/course-details.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/courses.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/courses.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/elements.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/elements.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/single-blog.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/single-blog.hbs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,61 +28,89 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+        <entry file="file://$PROJECT_DIR$/views/layout.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="306">
+              <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/BaiViet.js">
+        <entry file="file://$PROJECT_DIR$/views/blog.hbs">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/NguoiDung.js">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/about-us.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4811">
+              <caret line="283" selection-start-line="283" selection-end-line="283" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/TheLoaiBaiViet.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/views/contact.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/BaiDang.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/views/course-details.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="197" selection-start-line="197" selection-end-line="197" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/courses.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="332">
+              <caret line="162" selection-start-line="162" selection-end-line="162" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/BaiDangController.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/views/elements.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="623" selection-start-line="623" selection-end-line="623" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/BaiVietController.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/views/single-blog.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="411" selection-start-line="411" selection-end-line="411" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/NguoiDungController.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/views/index.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7072">
+              <caret line="416" selection-start-line="416" selection-end-line="416" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/TheLoaiController.js">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/error.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -91,6 +119,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -110,7 +139,6 @@
         <option value="$PROJECT_DIR$/views/contact.html" />
         <option value="$PROJECT_DIR$/views/course-details.html" />
         <option value="$PROJECT_DIR$/views/courses.html" />
-        <option value="$PROJECT_DIR$/views/elements.hbs" />
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/views/single-blog.html" />
         <option value="$PROJECT_DIR$/app.js" />
@@ -124,6 +152,17 @@
         <option value="$PROJECT_DIR$/controllers/BaiVietController.js" />
         <option value="$PROJECT_DIR$/controllers/NguoiDungController.js" />
         <option value="$PROJECT_DIR$/controllers/TheLoaiController.js" />
+        <option value="$PROJECT_DIR$/views/index.hbs" />
+        <option value="$PROJECT_DIR$/public/css/error.css" />
+        <option value="$PROJECT_DIR$/views/single-blog.hbs" />
+        <option value="$PROJECT_DIR$/views/layout.hbs" />
+        <option value="$PROJECT_DIR$/views/error.hbs" />
+        <option value="$PROJECT_DIR$/views/elements.hbs" />
+        <option value="$PROJECT_DIR$/views/courses.hbs" />
+        <option value="$PROJECT_DIR$/views/course-details.hbs" />
+        <option value="$PROJECT_DIR$/views/contact.hbs" />
+        <option value="$PROJECT_DIR$/views/blog.hbs" />
+        <option value="$PROJECT_DIR$/views/about-us.hbs" />
       </list>
     </option>
   </component>
@@ -149,17 +188,23 @@
             <path>
               <item name="WebChiaSe" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebChiaSe" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebChiaSe" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebChiaSe" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebChiaSe" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebChiaSe" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebChiaSe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebChiaSe" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,6 +217,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -221,28 +267,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558176884607</updated>
-      <workItem from="1558176887270" duration="3294000" />
+      <workItem from="1558176887270" duration="6433000" />
     </task>
+    <task id="LOCAL-00001" summary="Chia MVC">
+      <created>1558181641383</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558181641383</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3294000" />
+    <option name="totallyTimeSpent" value="6433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="npm" sideWeight="0.11463415" side_tool="true" visible="true" weight="0.25" />
+      <window_info id="npm" sideWeight="0.112709835" side_tool="true" visible="true" weight="0.25" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.88536584" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8872902" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.31751227" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.64648116" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5859247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -255,13 +309,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Chia MVC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chia MVC" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/layout.hbs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/error.hbs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/vendors/popup/magnific-popup.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -269,55 +321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/about-us.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="94" column="55" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/blog.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6144">
-          <caret line="365" column="66" selection-start-line="365" selection-start-column="66" selection-end-line="365" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/contact.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="93" column="49" selection-start-line="93" selection-start-column="49" selection-end-line="93" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/course-details.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1554">
-          <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/elements.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1503">
-          <caret line="92" column="47" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/single-blog.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6161">
-          <caret line="366" column="66" selection-start-line="366" selection-start-column="66" selection-end-line="366" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="151" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -350,13 +353,6 @@
     <entry file="file://$PROJECT_DIR$/models/BaiDang.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/courses.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/BaiDangController.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -368,6 +364,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/TheLoaiController.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/error.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa4960.7446/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" lean-forward="true" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/single-blog.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="411" selection-start-line="411" selection-end-line="411" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7072">
+          <caret line="416" selection-start-line="416" selection-end-line="416" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/error.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/elements.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="623" selection-start-line="623" selection-end-line="623" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/courses.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="162" selection-start-line="162" selection-end-line="162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/course-details.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/contact.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/blog.hbs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/about-us.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4811">
+          <caret line="283" selection-start-line="283" selection-end-line="283" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
