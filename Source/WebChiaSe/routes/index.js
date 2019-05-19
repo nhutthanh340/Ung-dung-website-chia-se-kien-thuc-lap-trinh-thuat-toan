@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index.hbs', { title: 'Express' });
 });
 
+router.get('/single-blog', function(req, res, next) {
+  res.render('single-blog.hbs', { title: 'Express' });
+});
+
 
 
 module.exports = router;
