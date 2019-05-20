@@ -1,33 +1,18 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index.hbs', { title: 'Express' });
-});
+var HomePage = require("../controllers/HomeController");
+var BaiDang = require("../controllers/BaiDangController");
+var Contact = require("../controllers/LienHeController");
+var DangNhap = require("../controllers/DangNhapController");
+var DangKy = require("../controllers/DangKyController");
 
-router.get('/single-blog', function(req, res, next) {
-  res.render('single-blog.hbs', { title: 'Express' });
-});
-router.get('/blog', function(req, res, next) {
-  res.render('blog.hbs', { title: 'Express' });
-});
-router.get('/courses', function(req, res, next) {
-  res.render('courses.hbs', { title: 'Express' });
-});
-router.get('/elements', function(req, res, next) {
-  res.render('elements.hbs', { title: 'Express' });
-});
-router.get('/contact', function(req, res, next) {
-  res.render('contact.hbs', { title: 'Express' });
-});
-router.get('/course-details', function(req, res, next) {
-  res.render('course-details.hbs', { title: 'Express' });
-});
-
-router.get('/login', function(req, res, next) {
-  res.render('login.hbs', { title: 'Express' });
-});
+router.get('/index', HomePage.HomePage);
+router.get('/blog', BaiDang.ShowAllBlog);
+router.get('/single-blog', BaiDang.DetailBlog);
+router.get('/contact', Contact.ShowContact);
+router.get('/login', DangNhap.ShowFormDangNhap);
+router.get('/sign-up', DangKy.ShowFormDangKy);
 
 
 module.exports = router;
