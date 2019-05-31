@@ -1,0 +1,24 @@
+{
+  "name": "da-web-giua-ki-admin",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "express-flash-notification": "^0.5.0",
+    "express-validator": "^5.3.1",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "mongodb": "^3.2.4",
+    "mongoose": "^5.5.8",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
