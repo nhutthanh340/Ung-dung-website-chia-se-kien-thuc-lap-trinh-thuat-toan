@@ -1,3 +1,3 @@
 exports.ShowFormDangKy = function (req, res) {
-    res.render('sign-up');
+    res.render('signUp');
 }
