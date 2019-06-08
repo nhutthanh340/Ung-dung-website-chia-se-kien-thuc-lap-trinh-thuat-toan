@@ -1,22 +1,25 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-var HomePage = require("../controllers/HomeController");
-var BaiDang = require("../controllers/BaiDangController");
-var Contact = require("../controllers/LienHeController");
-var DangNhap = require("../controllers/DangNhapController");
-var DangKy = require("../controllers/DangKyController");
-var BaiViet = require("../controllers/BaiVietController");
-var CapNhatThongTin = require("../controllers/UpdateThongTinController");
+const HomePage = require("../controllers/HomeController");
+const BaiDang = require("../controllers/BaiDangController");
+const Contact = require("../controllers/LienHeController");
+const User = require("../controllers/UserController");
+const BaiViet = require("../controllers/BaiVietController");
 
 router.get('/index', HomePage.HomePage);
-router.get('/GuiBaiViet', BaiViet.GuiBaiViet);
+router.get('/', HomePage.HomePage);
+router.get('/GuiBaiViet', User.isLoggedIn, BaiViet.GuiBaiViet);
 router.get('/blog', BaiDang.ShowAllBlog);
 router.get('/single-blog', BaiDang.DetailBlog);
 router.get('/contact', Contact.ShowContact);
-router.get('/login', DangNhap.ShowFormDangNhap);
-router.get('/sign-up', DangKy.ShowFormDangKy);
-router.get('/updateInfor', CapNhatThongTin.ShowFormUpdate);
+router.get('/login', User.FormLogIn);
+router.get('/signup', User.FormSignUp);
+router.get('/update', User.isLoggedIn, User.FormUpdate);
+router.get('/logout', User.logout);
 
+router.post('/login', User.Authenticate);
+router.post('/signup', User.registerPost);
+router.post('/updateUser/:id', User.isLoggedIn, User.PostUpdateUserInformation);
 
 module.exports = router;

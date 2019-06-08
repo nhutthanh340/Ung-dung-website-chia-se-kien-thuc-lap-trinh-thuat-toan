@@ -8,7 +8,7 @@
                 <h2>Đăng ký</h2>
                 <div class="page_link"><br>
                     <a href="/index">Trang chủ</a>
-                    <a href="/sing-up">Đăng ký</a>
+                    <a href="/singup">Đăng ký</a>
                 </div>
             </div>
         </div>
@@ -22,58 +22,64 @@
             <div class="login100-pic js-tilt" data-tilt>
                 <img src="images/img-01.png" alt="IMG">
             </div>
-
-            <form class="login100-form validate-form">
+            {{message}}
+            <form class="login100-form validate-form" method="post">
 					<span class="login100-form-title">
 						Đăng ký
 					</span>
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" id="hoten" name="hoten" placeholder="Tên đầy đủ">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-info-circle" aria-hidden="true"></i>
+						</span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" id="tendangnhap" name="tendangnhap" placeholder="Tên đăng nhập">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-info" aria-hidden="true"></i>
+						</span>
+                </div>
 
                 <div class="wrap-input100 validate-input"
                      data-validate="Bạn chưa nhập email hoặc email không đúng định dạng">
                     <input class="input100" type="text" id="email" name="email" placeholder="Email">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<i class="fa fa-envelope-open" aria-hidden="true"></i>
 						</span>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Bạn chưa nhập mật khẩu">
-                    <input class="input100" type="password" id="pass" name="pass" placeholder="Mật khẩu">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-                </div>
-                <div id="levelPass" style="margin-left: 20px">
-                </div>
-                <div class="wrap-input100 validate-input" data-validate="Bạn cần nhập lại mật khẩu">
-                    <input class="input100" type="password" id="re-pass" name="re-pass" placeholder="Xác nhận mật khẩu">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-
-                </div>
-
-                <div id="checkRePass" style="margin-left: 20px">
-                </div>
                 <div class="wrap-input100 validate-input">
-                    <input class="input100" type="date" name="birthday" placeholder="Ngày sinh">
+                    <input class="input100" type="date" id="ngaysinh" name="ngaysinh" placeholder="Ngày sinh">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                     </span>
                 </div>
 
-                <div class="wrap-input100 validate-input"
-                     data-validate="Hãy cho chúng tôi biết trình độ học vấn của bạn">
-                    <input class="input100" type="text" name="level" placeholder="Trình độ học vấn">
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" id="trinhdohocvan" name="trinhdohocvan"
+                           placeholder="Trình độ học vấn">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
-                        <i class="fa fa-book" aria-hidden="true"></i>
-                    </span>
+							<i class="fa fa-address-card-o" aria-hidden="true"></i>
+						</span>
                 </div>
 
+                <div class="wrap-input100 validate-input" data-validate="Bạn chưa nhập mật khẩu">
+                    <input class="input100" type="password" id="matkhau" name="matkhau" placeholder="Mật khẩu">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                </div>
+
+                <div id="levelPass" style="margin-left: 20px">
+                </div>
 
                 <div class="container-login100-form-btn">
                     <button class="login100-form-btn">

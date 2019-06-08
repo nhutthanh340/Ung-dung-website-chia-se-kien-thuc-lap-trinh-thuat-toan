@@ -9,10 +9,10 @@
                     <div class="author">
                         <a href="#">
                             <img class="avatar border-gray" src="/img/mike.jpg" alt="...">
-                            <h5 class="title">Vũ Thanh Tân</h5>
+                            <h5 class="title">{{admin.hoten}}</h5>
                         </a>
                         <p class="description">
-                            @vutahnhtan
+                            {{admin.email}}
                         </p>
                     </div>
                     <p class="description text-center">
@@ -27,12 +27,27 @@
                     <h5 class="card-title">Chỉnh sửa thông tin</h5>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form method="post" action="/updateAdmin/{{admin.id}}">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="email" class="form-control" placeholder="email@gmail.com">
+                                    <label>Tên đầy đủ</label>
+                                    <input type="text" name="hoten" class="form-control" value="{{admin.hoten}}"
+                                           required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Tên đăng nhập</label>
+                                    <input type="text" name="tendangnhap" class="form-control"
+                                           value="{{admin.tendangnhap}}" required>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Trình độ học vấn</label>
+                                    <input type="text" class="form-control" name="trinhdohocvan"
+                                           value="{{admin.trinhdohocvan}}" required>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +55,8 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Ngày sinh</label>
-                                    <input type="date" class="form-control" placeholder="Địa chỉ">
+                                    <input type="date" class="form-control" name="ngaysinh" value="{{admin.ngaysinh}}"
+                                           required>
                                 </div>
                             </div>
                         </div>

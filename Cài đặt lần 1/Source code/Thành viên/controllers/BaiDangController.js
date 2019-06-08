@@ -1,7 +1,7 @@
 exports.ShowAllBlog = function (req, res) {
-    res.render('blog');
+    res.render('blog', {user: req.user});
 }
 
 exports.DetailBlog = function (req, res) {
-    res.render('single-blog');
+    res.render('single-blog', {user: req.user});
 }

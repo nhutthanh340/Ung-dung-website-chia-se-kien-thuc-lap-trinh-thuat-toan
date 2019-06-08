@@ -5,20 +5,21 @@ const home = require("../controller/HomeController");
 const baidang = require("../controller/BaiDangController");
 const baiviet = require("../controller/BaiVietController");
 const admin = require("../controller/AdminControlers");
-const logIn = require("../controller/DangNhapController");
-const signUp = require("../controller/DangKyController");
 
 router.get('/index', home.HomePage);
 router.get('/', home.HomePage);
 
-router.get('/admins', admin.showAdmin);
-router.get('/danhsachbaidang', baidang.ShowBaiDang);
-router.get('/danhsachbaidang/editBaiDang/:id', baidang.EditBaiDang);
-router.get('/danhsachbaiviet', baiviet.ShowBaiViet);
-router.get('/danhsachbaiviet/editBaiViet/:id', baiviet.EditBaiViet);
+router.get('/update', admin.isLoggedIn, admin.FormUpdate);
+router.get('/signup', admin.FormSignUp);
+router.get('/login', admin.FormLogIn);
+router.get('/logout', admin.logout);
+router.get('/baidang', admin.isLoggedIn, baidang.ShowBaiDang);
+router.get('/baidang/editBaiDang', admin.isLoggedIn, baidang.EditBaiDang);
+router.get('/baiviet', admin.isLoggedIn, baiviet.ShowBaiViet);
+router.get('/baiviet/editBaiViet/', admin.isLoggedIn, baiviet.EditBaiViet);
 
-router.get('/login', logIn.ShowFormDangNhap);
-router.get('/signup', signUp.ShowFormDangKy);
-
+router.post('/signup', admin.registerPost);
+router.post('/login', admin.Authenticate);
+router.post('/updateAdmin/:id', admin.isLoggedIn, admin.PostUpdateUserInformation);
 
 module.exports = router;

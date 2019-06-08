@@ -1,3 +1,3 @@
 exports.HomePage = function (req, res) {
-    res.render('index');
-}
+    res.render('index',{admin: req.user});
+};

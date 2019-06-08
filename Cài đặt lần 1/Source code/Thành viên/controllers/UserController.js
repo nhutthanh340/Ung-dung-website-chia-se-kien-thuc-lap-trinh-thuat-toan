@@ -1,18 +1,18 @@
 const bcrypt = require('bcrypt');
 const passport = require('passport');
-const Connection = require('../model/MySQL').connection;
-const Admin = require('../model/Admin');
+const Connection = require('../models/MySQL').connection;
+const User = require('../models/NguoiDung');
 
 exports.FormSignUp = async function (req, res) {
-    res.render('signup', {admin: req.user});
+    res.render('signup', {user: req.user});
 };
 
 exports.FormLogIn = async function (req, res) {
-    res.render('login', {admin: req.user});
+    res.render('login', {user: req.user});
 };
 
 exports.FormUpdate = async function (req, res) {
-    res.render('admin/admin', {admin: req.user});
+    res.render('updateInfor', {user: req.user});
 };
 
 exports.registerPost = async (req, res) => {
@@ -22,15 +22,16 @@ exports.registerPost = async (req, res) => {
     const hoten = req.body.hoten;
     const tendangnhap = req.body.tendangnhap;
     const trinhdohocvan = req.body.trinhdohocvan;
+    const hash = await bcrypt.hash(password, 10);
 
-    const isExist = await Admin.checkEmailExist(email);
+    const isExist = await User.checkEmailExist(email);
 
     if (isExist)
         res.render('signup', {message: 'Email đã tồn tại'});
     else {
         if ((password.toString().length >= 8)) {
             res.redirect('/login');
-            const result = await Admin.insertNewAdmin(hoten, tendangnhap, email, trinhdohocvan, password, DOB, 2);
+            const result = await User.insertNewUser(hoten, tendangnhap, email, trinhdohocvan, password, DOB, 1);
         } else {
             res.render('signup', {message: 'Mật khẩu phải lớn hơn 8 kí tự'});
         }
@@ -60,6 +61,7 @@ exports.PostUpdateUserInformation = async function (req, res) {
     const trinhdohocvan = req.body.trinhdohocvan;
     const id = req.params.id;
 
-    const result = await Admin.updateAdminInformation(id, hoten, tendangnhap, trinhdohocvan, DOB);
+    const result = await User.updateUserInformation(id, hoten, tendangnhap, trinhdohocvan, DOB);
     res.redirect('/index');
 };
+
