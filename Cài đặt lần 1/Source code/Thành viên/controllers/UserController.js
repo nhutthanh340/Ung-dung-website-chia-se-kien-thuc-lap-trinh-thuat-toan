@@ -80,3 +80,13 @@ exports.CheckUserName = async function (req, res) {
       res.send(false);
   }
 };
+
+exports.Verify = function (req, res) {
+
+};
+
+exports.CancelFollow = async function (req, res) {
+    req.user.theodoi = 0;
+    await User.update(req.user);
+    res.redirect('/');
+};
