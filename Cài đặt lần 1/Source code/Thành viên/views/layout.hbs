@@ -49,8 +49,10 @@
                 </ul>
             </div>
             <div class="float-right">
-                <a class="dn_btn" href="tel:+4400123654896">+440 012 3654 896</a>
-                <a class="dn_btn" href="mailto:support@colorlib.com">{{user.email}}</a>
+                <!--<a class="dn_btn" href="tel:+4400123654896">+0901 987 123</a>-->
+                {{#if isAuthenticated}}
+                    <a class="dn_btn" href="/update">{{user.email}}</a>
+                {{/if}}
             </div>
         </div>
     </div>
@@ -74,21 +76,19 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="true">Danh mục</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="/blog">Tất cả bài viết</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Lập trình ứng dụng</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Lập trình web</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Giải thuật</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Câu đố</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Công nghệ mới</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Trí tuệ nhân tạo</a>
-                                </li>
+                                {{#each type}}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/blogs/{{this.id}}">{{this.tentheloai}}</a>
+                                    </li>
+                                {{/each}}
                             </ul>
                         </li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="true">Quản lý bài viết</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="/GuiBaiViet">Gửi bài viết</a>
+                                <li class="nav-item"><a class="nav-link" href="/guibaiviet">Gửi bài viết</a>
+                                <li class="nav-item"><a class="nav-link" href="/xembaiviet">Bài viết đã gửi</a>
                                 </li>
                             </ul>
                         </li>
@@ -99,10 +99,10 @@
                             <ul class="dropdown-menu">
                                 {{#if isAuthenticated}}
                                     <li class="nav-item"><a class="nav-link" href="/logout">Đăng xuất</a>
-                                    <li class="nav-item"><a class="nav-link" href="/update">Cập nhật thông tin</a>
+                                <li class="nav-item"><a class="nav-link" href="/update">Cập nhật thông tin</a>
                                 {{else}}
                                     <li class="nav-item"><a class="nav-link" href="/signup">Đăng ký</a>
-                                    <li class="nav-item"><a class="nav-link" href="/login">Đăng nhập</a>
+                                <li class="nav-item"><a class="nav-link" href="/login">Đăng nhập</a>
                                 {{/if}}
                             </ul>
                         </li>

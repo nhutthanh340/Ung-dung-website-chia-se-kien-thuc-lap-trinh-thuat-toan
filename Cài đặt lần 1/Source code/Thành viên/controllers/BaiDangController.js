@@ -1,7 +1,11 @@
-exports.ShowAllBlog = function (req, res) {
-    res.render('blog', {user: req.user});
-}
+const TheLoai = require('../models/TheLoaiBaiViet');
 
-exports.DetailBlog = function (req, res) {
-    res.render('single-blog', {user: req.user});
-}
+exports.ShowAllBlog = async function (req, res) {
+    const type = await TheLoai.readAll();
+    res.render('blog', {user: req.user, type});
+};
+
+exports.DetailBlog = async function (req, res) {
+    const type = await TheLoai.readAll();
+    res.render('single-blog', {user: req.user, type});
+};

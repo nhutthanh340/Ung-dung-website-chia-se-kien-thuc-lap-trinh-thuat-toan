@@ -13,9 +13,11 @@ const indexRouter = require('./routes/index');
 passport.use(new LocalStrategy({
     usernameField: 'tendangnhap',
     passwordField: 'matkhau'
-},UserController.LocalStrategy));
+}, UserController.LocalStrategy));
+
 
 const app = express();
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -32,8 +34,6 @@ app.use(function (req, res, next) {
    res.locals.isAuthenticated = req.isAuthenticated();
    next();
 });
-
-
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler

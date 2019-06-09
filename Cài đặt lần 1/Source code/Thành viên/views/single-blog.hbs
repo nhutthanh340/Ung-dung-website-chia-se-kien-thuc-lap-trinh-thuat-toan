@@ -157,23 +157,20 @@
                 </div>
                 <div class="comment-form">
                     <h4>Để lại bình luận của bạn</h4>
-                    <form>
-                        <div class="form-group form-inline">
+                    <form method="post">
+                        <div class="row">
                             <div class="form-group col-lg-6 col-md-6 name">
-                                <input type="text" class="form-control" id="name" placeholder="Nhập tên"
-                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
+                                <input type="text" class="form-control" name="hoten" value="{{user.hoten}}">
                             </div>
                             <div class="form-group col-lg-6 col-md-6 email">
-                                <input type="email" class="form-control" id="email" placeholder="Nhập email"
-                                       onfocus="this.placeholder = ''"
-                                       onblur="this.placeholder = 'Enter email address'">
+                                <input type="email" class="form-control" name="email" value="{{user.email}}">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control mb-10" rows="5" name="message" placeholder="Nhập bình luận"
-                                      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nhập bình luận'"
-                                      required=""></textarea>
+                        <div class="row">
+                            <textarea class="form-control mb-10" rows="5" name="message"
+                                      placeholder="Nhập bình luận"></textarea>
                         </div>
+                        <br><br>
                         <a href="#" class="primary-btn submit_btn">Bình luận</a>
                     </form>
                 </div>

@@ -2,17 +2,21 @@ const bcrypt = require('bcrypt');
 const passport = require('passport');
 const User = require('../models/NguoiDung');
 const saltRounds = 10;
+const TheLoai = require('../models/TheLoaiBaiViet');
 
 exports.FormSignUp = async function (req, res) {
-    res.render('signup', {user: req.user});
+    const type = await TheLoai.readAll();
+    res.render('signup', {type});
 };
 
 exports.FormLogIn = async function (req, res) {
-    res.render('login', {user: req.user});
+    const type = await TheLoai.readAll();
+    res.render('login', {type});
 };
 
 exports.FormUpdate = async function (req, res) {
-    res.render('updateInfor', {user: req.user});
+    const type = await TheLoai.readAll();
+    res.render('updateInfor', {user: req.user, type});
 };
 
 exports.registerPost = async (req, res) => {
@@ -47,9 +51,7 @@ passport.serializeUser(function (user, done) {
 });
 
 passport.deserializeUser(async function (tendangnhap, done) {
-    const user = await User.read(tendangnhap);
-    const json = JSON.parse(JSON.stringify(user));
-    done(undefined, json);
+    done(undefined, await User.read(tendangnhap));
 });
 
 exports.logout = (req, res) => {
@@ -71,7 +73,7 @@ exports.PostUpdateUserInformation = async function (req, res) {
 
 exports.CheckUserName = async function (req, res) {
   const nguoidung = await User.read(req.body.tendangnhap);
-  if (nguoidung==undefined)
+    if (nguoidung === undefined)
   {
       res.send(true);
   }else {
