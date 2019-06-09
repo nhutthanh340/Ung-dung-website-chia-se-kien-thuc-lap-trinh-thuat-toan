@@ -22,8 +22,8 @@ exports.insertNewAdmin = async function (hoten, tendangnhap, email, trinhdohocva
 };
 
 exports.validPassword = async (email, password) => {
-    const sql = "SELECT * FROM nguoidung WHERE email = ? ";
-    const admin = await Connection.promise().query(sql, email);
+    const sql = "SELECT * FROM nguoidung WHERE email = ? AND idloainguoidung = ?";
+    const admin = await Connection.promise().query(sql, [email, 2]);
 
     var json = JSON.parse(JSON.stringify(admin[0]));
 
