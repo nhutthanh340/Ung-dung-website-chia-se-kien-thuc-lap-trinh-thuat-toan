@@ -99,11 +99,13 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="true">Tài khoản</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="/signup">Đăng ký</a>
-                                <li class="nav-item"><a class="nav-link" href="/login">Đăng nhập</a>
-                                <li class="nav-item"><a class="nav-link" href="/logout">Đăng xuất</a>
-                                <li class="nav-item"><a class="nav-link" href="/update">Cập nhật thông tin</a>
-                                </li>
+                                {{#if isAuthenticated}}
+                                    <li class="nav-item"><a class="nav-link" href="/logout">Đăng xuất</a>
+                                    <li class="nav-item"><a class="nav-link" href="/update">Cập nhật thông tin</a>
+                                {{else}}
+                                    <li class="nav-item"><a class="nav-link" href="/signup">Đăng ký</a>
+                                    <li class="nav-item"><a class="nav-link" href="/login">Đăng nhập</a>
+                                {{/if}}
                             </ul>
                         </li>
                     </ul>
@@ -163,7 +165,7 @@
             <p class="col-lg-8 col-md-8 footer-text m-0">
                 Copyright &copy;<script>document.write(new Date().getFullYear());</script>
                 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                        href="https://colorlib.com" target="_blank">Colorlib</a>
+                    href="https://colorlib.com" target="_blank">Colorlib</a>
             <div class="col-lg-4 col-md-4 footer-social">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>

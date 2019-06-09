@@ -7,5 +7,5 @@ const connection = mysql.createConnection({
     password: process.env.PasswordDB,
     database: process.env.DB
 });
-
+connection.connect();
 exports.connection = connection;

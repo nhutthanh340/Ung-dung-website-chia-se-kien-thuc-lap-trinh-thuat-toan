@@ -1,7 +1,7 @@
 const level = require('strong-pass');
 
-$('#pass').keydown(function () {
-    let strongPass = level($('#pass').val(), { minLength: 8 });
+$('#matkhau').keydown(function () {
+    let strongPass = level($('#matkhau').val(), { minLength: 8 });
     if(strongPass<=1) {
         $('#levelPass').html('<font color="red"><small>Mật khẩu rất yếu</small></font>');
     }else if(strongPass<=2)
@@ -20,7 +20,7 @@ $('#pass').keydown(function () {
 });
 
 $('#re-pass').keydown(()=>{
-    const pass = $('#pass').val();
+    const pass = $('#matkhau').val();
     const rePass = $('#re-pass').val();
     if(pass!==rePass)
     {
