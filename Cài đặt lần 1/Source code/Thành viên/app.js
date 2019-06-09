@@ -20,8 +20,8 @@ passport.use(new LocalStrategy({
     passwordField: 'matkhau'
 }, async function (username, password, done) {
     try {
-        const sql = "SELECT * FROM nguoidung WHERE email = ? ";
-        const user = await Connection.promise().query(sql, username);
+        const sql = "SELECT * FROM nguoidung WHERE email = ? AND idloainguoidung = ?";
+        const user = await Connection.promise().query(sql, [username, 1]);
         if (user[0].length === 0) {
             return done(null, false, ({message: 'Incorrect username.'}));
         }
@@ -58,8 +58,8 @@ passport.serializeUser(function (user, done) {
 });
 
 passport.deserializeUser(async function (email, done) {
-    const sql = "SELECT * FROM nguoidung WHERE email = ? ";
-    const user = await Connection.promise().query(sql, email);
+    const sql = "SELECT * FROM nguoidung WHERE email = ? AND idloainguoidung = ?";
+    const user = await Connection.promise().query(sql, [email, 1]);
     const json = JSON.parse(JSON.stringify(user[0]));
     done(undefined, json[0]);
 });

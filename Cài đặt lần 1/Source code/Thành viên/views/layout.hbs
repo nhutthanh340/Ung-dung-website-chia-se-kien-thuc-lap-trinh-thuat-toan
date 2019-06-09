@@ -51,7 +51,7 @@
                 </ul>
             </div>
             <div class="float-right">
-                <a class="dn_btn" href="tel:+4400123654896">+440 012 3654 896</a>
+                <a class="dn_btn" href="tel:+4400123654896">+0901 987 123</a>
                 <a class="dn_btn" href="mailto:support@colorlib.com">{{user.email}}</a>
             </div>
         </div>
@@ -76,21 +76,19 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="true">Danh mục</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="/blog">Tất cả bài viết</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Lập trình ứng dụng</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Lập trình web</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Giải thuật</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Câu đố</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Công nghệ mới</a>
-                                <li class="nav-item"><a class="nav-link" href="/blog">Trí tuệ nhân tạo</a>
-                                </li>
+                                {{#each type}}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/blogs/{{this.id}}">{{this.tentheloai}}</a>
+                                    </li>
+                                {{/each}}
                             </ul>
                         </li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="true">Quản lý bài viết</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="/GuiBaiViet">Gửi bài viết</a>
+                                <li class="nav-item"><a class="nav-link" href="/guibaiviet">Gửi bài viết</a>
+                                <li class="nav-item"><a class="nav-link" href="/xembaiviet">Bài viết đã gửi</a>
                                 </li>
                             </ul>
                         </li>
@@ -163,7 +161,7 @@
             <p class="col-lg-8 col-md-8 footer-text m-0">
                 Copyright &copy;<script>document.write(new Date().getFullYear());</script>
                 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                        href="https://colorlib.com" target="_blank">Colorlib</a>
+                    href="https://colorlib.com" target="_blank">Colorlib</a>
             <div class="col-lg-4 col-md-4 footer-social">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>

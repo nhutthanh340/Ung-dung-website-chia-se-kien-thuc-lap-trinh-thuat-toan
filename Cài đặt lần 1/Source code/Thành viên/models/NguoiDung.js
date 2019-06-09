@@ -6,12 +6,15 @@ exports.readAllUser = async function () {
     return result[0];
 };
 
+exports.readOneUser = async function (email) {
+    const result = await Connection.promise().query('select * from nguoidung where idloainguoidung = ? and email = ?', [1, email]);
+    return result[0];
+};
+
 exports.checkEmailExist = async function (email) {
     const sql = "SELECT COUNT(*) AS cnt FROM nguoidung WHERE email = ? ";
     const result = await Connection.promise().query(sql, email);
-    if (result[0].cnt === 0)
-        return true;
-    return false;
+    return result[0].cnt === 0;
 };
 
 exports.insertNewUser = async function (hoten, tendangnhap, email, trinhdohocvan, matkhau, ngaysinh, idloainguoidung) {
@@ -22,8 +25,8 @@ exports.insertNewUser = async function (hoten, tendangnhap, email, trinhdohocvan
 };
 
 exports.validPassword = async (email, password) => {
-    const sql = "SELECT * FROM nguoidung WHERE email = ? ";
-    const admin = await Connection.promise().query(sql, email);
+    const sql = "SELECT * FROM nguoidung WHERE email = ? AND idloainguoidung = ?";
+    const admin = await Connection.promise().query(sql, [email, 1]);
 
     var json = JSON.parse(JSON.stringify(admin[0]));
 

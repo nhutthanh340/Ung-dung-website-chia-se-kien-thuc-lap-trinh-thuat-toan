@@ -1,18 +1,24 @@
 const bcrypt = require('bcrypt');
 const passport = require('passport');
-const Connection = require('../models/MySQL').connection;
 const User = require('../models/NguoiDung');
+const TheLoai = require('../models/TheLoai');
 
 exports.FormSignUp = async function (req, res) {
-    res.render('signup', {user: req.user});
+    const type = await TheLoai.readAllType();
+    const json = JSON.parse(JSON.stringify(type));
+    res.render('signup', {user: req.user, type: json});
 };
 
 exports.FormLogIn = async function (req, res) {
-    res.render('login', {user: req.user});
+    const type = await TheLoai.readAllType();
+    const json = JSON.parse(JSON.stringify(type));
+    res.render('login', {user: req.user, type: json});
 };
 
 exports.FormUpdate = async function (req, res) {
-    res.render('updateInfor', {user: req.user});
+    const type = await TheLoai.readAllType();
+    const json = JSON.parse(JSON.stringify(type));
+    res.render('updateInfor', {user: req.user, type: json});
 };
 
 exports.registerPost = async (req, res) => {
