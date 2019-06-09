@@ -21,5 +21,5 @@ router.get('/logout', User.logout);
 router.post('/login', User.Authenticate);
 router.post('/signup', User.registerPost);
 router.post('/updateUser/:id', User.isLoggedIn, User.PostUpdateUserInformation);
-
+router.post('/checkUserName',User.CheckUserName);
 module.exports = router;

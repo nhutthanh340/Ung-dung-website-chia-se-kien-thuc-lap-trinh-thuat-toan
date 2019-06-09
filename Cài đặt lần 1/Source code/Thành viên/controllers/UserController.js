@@ -46,11 +46,12 @@ passport.serializeUser(function (user, done) {
     done(null, user);
 });
 
-passport.deserializeUser(async function (email, done) {
-    const user = await User.read(email);
+passport.deserializeUser(async function (tendangnhap, done) {
+    const user = await User.read(tendangnhap);
     const json = JSON.parse(JSON.stringify(user));
     done(undefined, json);
 });
+
 exports.logout = (req, res) => {
     req.logout();
     req.session.destroy();
@@ -68,3 +69,12 @@ exports.PostUpdateUserInformation = async function (req, res) {
     res.redirect('/index');
 };
 
+exports.CheckUserName = async function (req, res) {
+  const nguoidung = await User.read(req.body.tendangnhap);
+  if (nguoidung==undefined)
+  {
+      res.send(true);
+  }else {
+      res.send(false);
+  }
+};

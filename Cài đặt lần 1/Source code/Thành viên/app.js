@@ -11,7 +11,7 @@ const UserController = require('./controllers/UserController');
 const indexRouter = require('./routes/index');
 
 passport.use(new LocalStrategy({
-    usernameField: 'email',
+    usernameField: 'tendangnhap',
     passwordField: 'matkhau'
 },UserController.LocalStrategy));
 
