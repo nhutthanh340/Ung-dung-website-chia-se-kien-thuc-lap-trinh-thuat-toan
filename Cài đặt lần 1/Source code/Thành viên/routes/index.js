@@ -18,8 +18,7 @@ router.get('/signup', User.FormSignUp);
 router.get('/update', User.isLoggedIn, User.FormUpdate);
 router.get('/logout', User.logout);
 router.get('/xembaiviet', User.isLoggedIn, BaiViet.XemBaiViet);
-router.get('/verify', User.Verify);
-
+router.get('/Verify/:Verify', User.Verify);
 router.post('/guibaiviet', BaiViet.ThemBaiViet);
 router.post('/login', User.Authenticate);
 router.post('/signup', User.registerPost);
