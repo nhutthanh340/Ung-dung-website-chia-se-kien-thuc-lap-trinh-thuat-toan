@@ -1,46 +1,43 @@
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const User = require('../models/NguoiDung');
-const TheLoai = require('../models/TheLoai');
+const saltRounds = 10;
+const TheLoai = require('../models/TheLoaiBaiViet');
 
 exports.FormSignUp = async function (req, res) {
-    const type = await TheLoai.readAllType();
-    const json = JSON.parse(JSON.stringify(type));
-    res.render('signup', {user: req.user, type: json});
+    const type = await TheLoai.readAll();
+    res.render('signup', {type});
 };
 
 exports.FormLogIn = async function (req, res) {
-    const type = await TheLoai.readAllType();
-    const json = JSON.parse(JSON.stringify(type));
-    res.render('login', {user: req.user, type: json});
+    const type = await TheLoai.readAll();
+    res.render('login', {type});
 };
 
 exports.FormUpdate = async function (req, res) {
-    const type = await TheLoai.readAllType();
-    const json = JSON.parse(JSON.stringify(type));
-    res.render('updateInfor', {user: req.user, type: json});
+    const type = await TheLoai.readAll();
+    res.render('updateInfor', {user: req.user, type});
 };
 
 exports.registerPost = async (req, res) => {
-    const password = req.body.matkhau;
-    const email = req.body.email;
-    const DOB = req.body.ngaysinh;
-    const hoten = req.body.hoten;
-    const tendangnhap = req.body.tendangnhap;
-    const trinhdohocvan = req.body.trinhdohocvan;
-    const hash = await bcrypt.hash(password, 10);
+    req.body.idloainguoidung = 1;
+    req.body.matkhau = await bcrypt.hash(req.body.matkhau, saltRounds);
+    await User.insert(req.body);
+    res.redirect('/login');
+};
 
-    const isExist = await User.checkEmailExist(email);
-
-    if (isExist)
-        res.render('signup', {message: 'Email đã tồn tại'});
-    else {
-        if ((password.toString().length >= 8)) {
-            res.redirect('/login');
-            const result = await User.insertNewUser(hoten, tendangnhap, email, trinhdohocvan, password, DOB, 1);
-        } else {
-            res.render('signup', {message: 'Mật khẩu phải lớn hơn 8 kí tự'});
-        }
+exports.LocalStrategy = async function (username, password, done) {
+    const thanhvien = await User.read(username);
+    let result;
+    try {
+        result = await bcrypt.compare(password, thanhvien.matkhau);
+    } catch (e) {
+        return done(null, false);
+    }
+    if (result) {
+        return done(null, username);
+    } else {
+        return done(null, false);
     }
 };
 
@@ -49,8 +46,17 @@ exports.Authenticate = passport.authenticate('local', {
     successRedirect: '/index',
 });
 
+passport.serializeUser(function (user, done) {
+    done(null, user);
+});
+
+passport.deserializeUser(async function (tendangnhap, done) {
+    done(undefined, await User.read(tendangnhap));
+});
+
 exports.logout = (req, res) => {
     req.logout();
+    req.session.destroy();
     res.redirect('/index');
 };
 
@@ -61,13 +67,16 @@ exports.isLoggedIn = function (req, res, next) {
 };
 
 exports.PostUpdateUserInformation = async function (req, res) {
-    const DOB = req.body.ngaysinh;
-    const hoten = req.body.hoten;
-    const tendangnhap = req.body.tendangnhap;
-    const trinhdohocvan = req.body.trinhdohocvan;
-    const id = req.params.id;
-
-    const result = await User.updateUserInformation(id, hoten, tendangnhap, trinhdohocvan, DOB);
+    await User.update(req.body);
     res.redirect('/index');
 };
 
+exports.CheckUserName = async function (req, res) {
+  const nguoidung = await User.read(req.body.tendangnhap);
+    if (nguoidung === undefined)
+  {
+      res.send(true);
+  }else {
+      res.send(false);
+  }
+};

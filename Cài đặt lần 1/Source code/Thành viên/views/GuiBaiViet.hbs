@@ -29,8 +29,8 @@
                             <input type="text" class="form-control" id="tenbaiviet" name="tenbaiviet"
                                    placeholder="Nhập tên bài viết" required>
                         </div>
+                        <label>Chọn chủ đề</label>
                         <div class="form-group">
-                            <label>Chọn chủ đề</label>
                             <select class="form-control" name="idtheloaibaiviet" required>
                                 {{#each type}}
                                     <option value="{{this.id}}">{{this.tentheloai}}</option>

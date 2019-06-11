@@ -22,6 +22,7 @@ router.get('/xembaiviet', User.isLoggedIn, BaiViet.XemBaiViet);
 router.post('/guibaiviet', BaiViet.ThemBaiViet);
 router.post('/login', User.Authenticate);
 router.post('/signup', User.registerPost);
+router.post('/updateUser/:id', User.isLoggedIn, User.PostUpdateUserInformation);
+router.post('/checkUserName',User.CheckUserName);
 router.post('/updateUser/:id', User.PostUpdateUserInformation);
-
 module.exports = router;

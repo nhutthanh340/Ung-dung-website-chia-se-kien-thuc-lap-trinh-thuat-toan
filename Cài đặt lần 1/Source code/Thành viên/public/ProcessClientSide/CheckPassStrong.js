@@ -1,7 +1,20 @@
 const level = require('strong-pass');
 
-$('#pass').keydown(function () {
-    let strongPass = level($('#pass').val(), { minLength: 8 });
+XacNhanMatKhau = function()
+{
+    const pass = $('#matkhau').val();
+    const rePass = $('#matkhaunhaplai').val();
+    if(pass!==rePass)
+    {
+        $('#CheckRePass').html('<font color="red"><small>Mật khẩu nhập lại không giống</small></font>');
+    }else
+    {
+        $('#CheckRePass').html('');
+    }
+};
+
+$('#matkhau').keyup(function () {
+    let strongPass = level($('#matkhau').val(), { minLength: 8 });
     if(strongPass<=1) {
         $('#levelPass').html('<font color="red"><small>Mật khẩu rất yếu</small></font>');
     }else if(strongPass<=2)
@@ -17,17 +30,9 @@ $('#pass').keydown(function () {
     {
         $('#levelPass').html('<font color="#006400"><small>Mật khẩu rất mạnh</small></font>');
     }
+    XacNhanMatKhau();
 });
-
-$('#re-pass').keydown(()=>{
-    const pass = $('#pass').val();
-    const rePass = $('#re-pass').val();
-    if(pass!==rePass)
-    {
-        $('#checkRePass').html('<font color="red"><small>Mật khẩu nhập lại không giống</small></font>');
-    }else
-    {
-        $('#checkRePass').html('');
-    }
+$('#matkhaunhaplai').keyup(()=>{
+    XacNhanMatKhau();
 });
 

@@ -1,17 +1,27 @@
 const Connection = require('../models/MySQL').connection;
-const User = require('../models/NguoiDung');
 
-exports.InsertBaiViet = async function (tenbaiviet, idtheloaibaiviet, noidung, idnguoigui) {
-    const sqlInsert = "INSERT INTO baiviet(tenbaiviet, idtheloaibaiviet, noidung, idnguoigui) VALUES (?,?,?,?)";
-    const result = await Connection.promise().query(sqlInsert, [tenbaiviet, idtheloaibaiviet, noidung, idnguoigui]);
-    return result;
+exports.insert = async function (data) {
+    return await Connection.promise().query('insert into baiviet set ?', data);
+};
+exports.delete = async function (id) {
+    return await Connection.promise().query('delete from baiviet where id= ?', id);
 };
 
-exports.readAllBaiViet = async function (email) {
-    const getID = await User.readOneUser(email);
-    const id = JSON.parse(JSON.stringify(getID[0]));
+exports.update = async function (data) {
+    return await Connection.promise().query('update baiviet set ?', data);
+};
 
-    const sql = 'select * from baiviet BV, theloaibaiviet TL where BV.idnguoigui = ? and BV.idtheloaibaiviet = TL.id';
-    const result = await Connection.promise().query(sql, id.id);
+exports.readAll = async function () {
+    const result = await Connection.promise().query('select * from baiviet');
     return result[0];
+};
+
+exports.readAll = async function (idnguoigui) {
+    const result = await Connection.promise().query('select * from baiviet where idnguoigui=?', idnguoigui);
+    return result[0];
+};
+
+exports.read = async function (id) {
+    const result = await Connection.promise().query('select * from baiviet where id=?', id);
+    return result[0][0];
 };

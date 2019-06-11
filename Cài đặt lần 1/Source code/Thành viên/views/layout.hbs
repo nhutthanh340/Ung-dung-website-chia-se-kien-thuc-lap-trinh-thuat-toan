@@ -21,8 +21,6 @@
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
@@ -51,8 +49,10 @@
                 </ul>
             </div>
             <div class="float-right">
-                <a class="dn_btn" href="tel:+4400123654896">+0901 987 123</a>
-                <a class="dn_btn" href="mailto:support@colorlib.com">{{user.email}}</a>
+                <!--<a class="dn_btn" href="tel:+4400123654896">+0901 987 123</a>-->
+                {{#if isAuthenticated}}
+                    <a class="dn_btn" href="/update">{{user.email}}</a>
+                {{/if}}
             </div>
         </div>
     </div>
@@ -97,11 +97,13 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="true">Tài khoản</a>
                             <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="/signup">Đăng ký</a>
-                                <li class="nav-item"><a class="nav-link" href="/login">Đăng nhập</a>
-                                <li class="nav-item"><a class="nav-link" href="/logout">Đăng xuất</a>
+                                {{#if isAuthenticated}}
+                                    <li class="nav-item"><a class="nav-link" href="/logout">Đăng xuất</a>
                                 <li class="nav-item"><a class="nav-link" href="/update">Cập nhật thông tin</a>
-                                </li>
+                                {{else}}
+                                    <li class="nav-item"><a class="nav-link" href="/signup">Đăng ký</a>
+                                <li class="nav-item"><a class="nav-link" href="/login">Đăng nhập</a>
+                                {{/if}}
                             </ul>
                         </li>
                     </ul>
@@ -209,5 +211,6 @@
 <!--===============================================================================================-->
 <script src="js/main.js"></script>
 <script src="js/CheckPassStrong.js"></script>
+<script src="js/AjaxSignUp.js"></script>
 </body>
 </html>
