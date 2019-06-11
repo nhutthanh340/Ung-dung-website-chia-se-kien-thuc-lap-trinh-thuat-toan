@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c4525f3-372f-4073-a34a-0e6f71546a70" name="Default Changelist" comment="Send Activation Email">
-      <change afterPath="$PROJECT_DIR$/views/ConfirmationEmail.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/email.html" afterDir="false" />
+    <list default="true" id="2c4525f3-372f-4073-a34a-0e6f71546a70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NoiDungBaiViet/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/BinhLuan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/BaiDangController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/BaiDangController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/lint.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/release/browser/node_datetime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/scripts/gen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/src/browser_templates/main.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/src/datetime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/src/timednumber.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/src/timedstate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-datetime/test/performance.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/guibaiviet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/guibaiviet.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/signUp.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/signUp.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/single-blog.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/single-blog.hbs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,50 +23,57 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+        <entry file="file://$PROJECT_DIR$/controllers/UserController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="1248">
+              <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/UserController.js">
+        <entry file="file://$PROJECT_DIR$/controllers/BaiDangController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="70" column="11" lean-forward="true" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
+            <state relative-caret-position="199">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/blog.hbs">
+        <entry file="file://$PROJECT_DIR$/controllers/BaiVietController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" selection-start-line="1" selection-end-line="12" selection-end-column="10" />
+            <state relative-caret-position="48">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/ConfirmationEmail.hbs">
+        <entry file="file://$PROJECT_DIR$/views/single-blog.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/email.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2808">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="132">
+              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
               <folding>
-                <element signature="n#style#0;n#v:roundrect#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#center#0;n#v:roundrect#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+                <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+                <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NoiDungBaiViet/1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -138,10 +129,8 @@
         <option value="$PROJECT_DIR$/views/login.hbs" />
         <option value="$PROJECT_DIR$/public/js/AjaxSignUp.js" />
         <option value="$PROJECT_DIR$/public/ProcessClientSide/CheckPassStrong.js" />
-        <option value="$PROJECT_DIR$/models/BaiDang.js" />
         <option value="$PROJECT_DIR$/models/TheLoai.js" />
         <option value="$PROJECT_DIR$/models/TheLoaiBaiViet.js" />
-        <option value="$PROJECT_DIR$/controllers/BaiDangController.js" />
         <option value="$PROJECT_DIR$/models/BaiViet.js" />
         <option value="$PROJECT_DIR$/controllers/HomeController.js" />
         <option value="$PROJECT_DIR$/controllers/LienHeController.js" />
@@ -149,14 +138,18 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/layout.hbs" />
         <option value="$PROJECT_DIR$/models/NguoiDung.js" />
-        <option value="$PROJECT_DIR$/views/single-blog.hbs" />
         <option value="$PROJECT_DIR$/views/guibaiviet.hbs" />
         <option value="$PROJECT_DIR$/views/ConfirmationEmail.html" />
         <option value="$PROJECT_DIR$/views/signUp.hbs" />
         <option value="$PROJECT_DIR$/views/email.html" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/ConfirmationEmail.hbs" />
+        <option value="$PROJECT_DIR$/models/BaiDang.js" />
+        <option value="$PROJECT_DIR$/models/BinhLuan.js" />
         <option value="$PROJECT_DIR$/controllers/UserController.js" />
+        <option value="$PROJECT_DIR$/NoiDungBaiViet/1.html" />
+        <option value="$PROJECT_DIR$/views/single-blog.hbs" />
+        <option value="$PROJECT_DIR$/controllers/BaiDangController.js" />
       </list>
     </option>
   </component>
@@ -178,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,18 +197,17 @@
             <path>
               <item name="Thành viên" type="b2602c69:ProjectViewProjectNode" />
               <item name="Thành viên" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="NoiDungBaiViet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Thành viên" type="b2602c69:ProjectViewProjectNode" />
               <item name="Thành viên" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,7 +219,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -290,7 +283,8 @@
       <workItem from="1559995702168" duration="1198000" />
       <workItem from="1560011588173" duration="2289000" />
       <workItem from="1560045771012" duration="22657000" />
-      <workItem from="1560133479734" duration="14759000" />
+      <workItem from="1560133479734" duration="15077000" />
+      <workItem from="1560231071885" duration="21747000" />
     </task>
     <task id="LOCAL-00001" summary="Change menu when Authenticate">
       <created>1560066356074</created>
@@ -306,23 +300,30 @@
       <option name="project" value="LOCAL" />
       <updated>1560094474296</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Send Activation Email">
+      <created>1560150994914</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560150994914</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120778000" />
+    <option name="totallyTimeSpent" value="142843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.89220184" visible="true" weight="0.22395833" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.89220184" visible="true" weight="0.22395833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.10779817" side_tool="true" weight="0.16443452" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32820514" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30769232" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30940172" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.8632479" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -434,30 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/BaiViet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/TheLoaiController.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/LienHeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/TheLoaiBaiViet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -472,45 +449,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/BaiDangController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/NguoiDung.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="21" column="95" selection-start-line="21" selection-start-column="95" selection-end-line="21" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/BaiDang.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/BaiVietController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3432">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/single-blog.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4056">
-          <caret line="169" column="30" selection-start-line="169" selection-start-column="30" selection-end-line="169" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -535,20 +477,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2808">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#v:roundrect#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#center#0;n#v:roundrect#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="480">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
@@ -567,10 +498,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/BinhLuan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/BaiViet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/LienHeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/BaiDang.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4896">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-470">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/TheLoaiController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoiDungBaiViet/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/single-blog.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/UserController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="70" column="11" lean-forward="true" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
+        <state relative-caret-position="1248">
+          <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/BaiVietController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/BaiDangController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
         </state>
       </provider>
     </entry>

@@ -29,7 +29,8 @@
     "passport-local": "^1.0.0",
     "sendmail": "^1.4.1",
     "sql-model": "^1.1.0",
-    "strong-pass": "0.0.4"
+    "strong-pass": "0.0.4",
+    "handlebars": "latest"
   },
   "devDependencies": {
     "@types/express": "^4.17.0"

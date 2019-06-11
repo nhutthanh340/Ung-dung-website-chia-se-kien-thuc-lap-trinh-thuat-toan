@@ -44,6 +44,7 @@ exports.FormUpdate = async function (req, res) {
     res.render('updateInfor', {user: req.user, type});
 };
 
+
 exports.registerPost = async (req, res) => {
     req.body.idloainguoidung = 1;
     req.body.matkhau = await bcrypt.hash(req.body.matkhau, saltRounds);
