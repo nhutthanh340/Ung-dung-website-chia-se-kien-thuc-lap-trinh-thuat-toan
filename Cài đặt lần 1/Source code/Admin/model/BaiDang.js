@@ -30,10 +30,10 @@ exports.readContentPostByIdBlog = async function (id) {
     return result[0];
 };
 
-exports.deleteBlog = async function (idBV, idBD) {
+exports.deleteBlog = async function (idBD, idBV) {
     const sqlBD = "delete from baidang where id = ?";
     const resultBD = await Connection.promise().query(sqlBD, idBD);
 
-    const sqlBV = "delete from baiviet where id = ?";
+    const sqlBV = "update baiviet set trangthai = 'Đã xóa' where id = ?";
     const resultBV = await Connection.promise().query(sqlBV, idBV);
 };

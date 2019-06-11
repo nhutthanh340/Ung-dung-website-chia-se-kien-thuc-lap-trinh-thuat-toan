@@ -17,7 +17,7 @@ router.get('/baidang', admin.isLoggedIn, baidang.ShowBaiDang);
 router.get('/baidang/edit/:id', baidang.FormEditBaiDang);
 router.get('/baiviet', admin.isLoggedIn, baiviet.ShowBaiViet);
 router.get('/baiviet/edit/:id', baiviet.FormEditBaiViet);
-router.get("/baidang/deleteBaiDang/:id", baidang.DeleteBaiDang);
+router.get("/baidang/delete/:id", baidang.DeleteBaiDang);
 
 router.post('/signup', admin.registerPost);
 router.post('/login', admin.Authenticate);

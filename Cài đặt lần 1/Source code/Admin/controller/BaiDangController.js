@@ -25,8 +25,8 @@ exports.PostUpdateBaiDang = async function (req, res) {
 };
 
 exports.DeleteBaiDang = async function (req, res) {
-    const id = req.params.id;
-
+    const id = req.params.id; // id bài đăng
+    console.log(id);
     const resultGetIdPost = await BaiDang.readIdPostFromBlog(id);
     const jsonGetIdPost = JSON.parse(JSON.stringify(resultGetIdPost));
 
