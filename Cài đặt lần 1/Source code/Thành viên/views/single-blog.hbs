@@ -159,12 +159,14 @@
                     <h4>Để lại bình luận của bạn</h4>
                     <form method="post">
                         <div class="row">
-                            <div class="form-group col-lg-6 col-md-6 name">
-                                <input type="text" class="form-control" name="hoten" value="{{user.hoten}}">
-                            </div>
-                            <div class="form-group col-lg-6 col-md-6 email">
-                                <input type="email" class="form-control" name="email" value="{{user.email}}">
-                            </div>
+                            {{#unless isAuthenticated}}
+                                <div class="form-group col-lg-6 col-md-6 name">
+                                    <input type="text" class="form-control" name="hoten" value="{{user.hoten}}">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 email">
+                                    <input type="email" class="form-control" name="email" value="{{user.email}}">
+                                </div>
+                            {{/unless}}
                         </div>
                         <div class="row">
                             <textarea class="form-control mb-10" rows="5" name="message"
