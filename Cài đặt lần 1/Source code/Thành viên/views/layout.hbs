@@ -32,7 +32,6 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
-
 </head>
 
 
@@ -78,20 +77,22 @@
                             <ul class="dropdown-menu">
                                 {{#each type}}
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/blogs/{{this.id}}">{{this.tentheloai}}</a>
+                                        <a class="nav-link" href="/baidang/{{this.id}}">{{this.tentheloai}}</a>
                                     </li>
                                 {{/each}}
                             </ul>
                         </li>
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="true">Quản lý bài viết</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link" href="/guibaiviet">Gửi bài viết</a>
-                                <li class="nav-item"><a class="nav-link" href="/xembaiviet">Bài viết đã gửi</a>
-                                </li>
-                            </ul>
-                        </li>
+                        {{#if isAuthenticated}}
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="true">Quản lý bài viết</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="/guibaiviet">Gửi bài viết</a>
+                                    <li class="nav-item"><a class="nav-link" href="/xembaiviet">Bài viết đã gửi</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        {{/if}}
                         <li class="nav-item"><a class="nav-link" href="/contact">Liên hệ</a></li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"

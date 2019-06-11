@@ -5,44 +5,43 @@
                 <h4 class="card-title"><strong>Chỉnh sửa bài viết</strong></h4>
             </div>
             <div class="card-body">
-                <form method="post" action="/updateBaiDang/{{product._id}}">
+                <form method="post" action="/updateBaiViet/{{baiviet.id}}">
                     <div class="row">
                         <div class="col-md-12 pr-1">
                             <div class="form-group">
                                 <div class="col-md-12 pl-1">
                                     <div class="form-group">
                                         <label>Tên bài viết</label>
-                                        <input value="ABC" name="title" type="text" class="form-control">
+                                        <input value="{{baiviet.tenbaiviet}}" name="tenbaiviet" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-12 pl-1">
                                     <div class="form-group">
                                         <label>Chủ đề</label>
-                                        <select class="form-control" name="idBrand">
-                                            <option selected value="">Trí tuệ nhân tạo</option>
-                                            <option selected value="">Ngôn ngữ lập trình</option>
+                                        <select class="form-control" name="idtheloaibaiviet">
+                                            <option selected value="{{nametype.id}}">{{nametype.tentheloai}}</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-12 pl-1">
                                     <div class="form-group">
-                                        <label>Ngày gửi</label>
-                                        <input name="title" type="date" class="form-control">
+                                        <label>Người gửi</label>
+                                        <input disabled value="{{username.hoten}}" type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-12 pl-1">
+                                <div class="col-md-12 pl-10">
                                     <div class="form-group">
-                                        <label>Nội dung tóm tắt</label>
-                                        <input value="WhiteHub – Giải pháp kiểm thử bảo mật tối ưu cho doanh nghiệp"
-                                               name="title" type="text" class="form-control">
+                                        <label>Tóm tắt</label>
+                                        <textarea name="tomtat" class="form-control" type="text">{{baiviet.tomtat}}</textarea>
                                     </div>
                                 </div>
-                                <div class="col-md-12 pl-1">
+                                <div class="col-md-12 pl-10">
                                     <div class="form-group">
                                         <label>Nội dung</label>
-                                        <textarea name="title" class="form-control" type="text"></textarea>
+                                        <textarea name="noidung" class="form-control" type="text">{{baiviet.noidung}}</textarea>
                                     </div>
                                 </div>
+                                <input name="trangthai" type="hidden" class="form-control" value="Đã xác nhận">
                             </div>
                             <div class="col-md-12">
                                 <div class="update ml-auto mr-auto">

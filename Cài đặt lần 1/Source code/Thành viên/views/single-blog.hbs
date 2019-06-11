@@ -26,15 +26,11 @@
                     <div class="col-lg-3  col-md-3">
                         <div class="blog_info text-right">
                             <div class="post_tag">
-                                <a href="#">Công nghệ mới,</a>
-                                <a class="active" href="#">Giải thuật,</a>
-                                <a href="#">Câu đố,</a>
-                                <a href="#">Lập trình web</a>
+                                <a class="active" href="#">{{detail.tentheloai}}</a>
                             </div>
                             <ul class="blog_meta list">
-                                <li><a href="#">Tên tác giả<i class="lnr lnr-user"></i></a></li>
-                                <li><a href="#">12 tháng 12, 2018<i class="lnr lnr-calendar-full"></i></a></li>
-                                <li><a href="#">1.2M lượt xem<i class="lnr lnr-eye"></i></a></li>
+                                <li><a href="#">{{user.email}}<i class="lnr lnr-user"></i></a></li>
+                                <li><a href="#">{{detail.ngaydang}}<i class="lnr lnr-calendar-full"></i></a></li>
                                 <li><a href="#">05 bình luận<i class="lnr lnr-bubble"></i></a></li>
                             </ul>
                             <ul class="social-links">
@@ -45,7 +41,26 @@
                             </ul>
                         </div>
                     </div>
+                    <<<<<<< HEAD
                     {{{Content}}}
+                    =======
+                    <div class="col-lg-9 col-md-9 blog_details">
+                        <h2>{{detail.tenbaiviet}}</h2>
+                        <p class="excert">
+                            {{detail.noidung}}
+                        </p>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/blog/post-img1.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="img/blog/post-img2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    >>>>>>> 531920a40c3919f476ddf899dec15e5d09d1b54f
                 </div>
                 <div class="comments-area">
                     <h4>05 bình luận</h4>

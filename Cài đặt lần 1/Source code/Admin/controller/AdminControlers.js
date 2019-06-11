@@ -2,6 +2,7 @@ const bcrypt = require('bcrypt');
 const passport = require('passport');
 const Connection = require('../model/MySQL').connection;
 const Admin = require('../model/Admin');
+const LocalStrategy = require('passport-local').Strategy;
 
 exports.FormSignUp = async function (req, res) {
     res.render('signup', {admin: req.user});
@@ -63,3 +64,33 @@ exports.PostUpdateUserInformation = async function (req, res) {
     const result = await Admin.updateAdminInformation(id, hoten, tendangnhap, trinhdohocvan, DOB);
     res.redirect('/index');
 };
+
+passport.use(new LocalStrategy({
+    usernameField: 'email',
+    passwordField: 'matkhau'
+}, async function (username, password, done) {
+    try {
+        const admin = await Admin.readOneAdmin(username);
+        if (admin.length === 0) {
+            return done(null, false, ({message: 'Incorrect username.'}));
+        }
+        const isPasswordValid = await Admin.validPassword(username, password);
+        if (!isPasswordValid) {
+            return done(null, false, ({message: 'Incorrect password.'}));
+        }
+        const json = JSON.parse(JSON.stringify(admin[0]));
+        return done(null, json);
+    } catch (ex) {
+        return done(ex);
+    }
+}));
+
+passport.serializeUser(function (admin, done) {
+    done(null, admin.email);
+});
+
+passport.deserializeUser(async function (email, done) {
+    const admin = await Admin.readOneAdmin(email)
+    const json = JSON.parse(JSON.stringify(admin[0]));
+    done(undefined, json);
+});

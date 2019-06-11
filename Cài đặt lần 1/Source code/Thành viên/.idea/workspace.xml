@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c4525f3-372f-4073-a34a-0e6f71546a70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoiDungBaiViet/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/BinhLuan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2c4525f3-372f-4073-a34a-0e6f71546a70" name="Default Changelist" comment="Merge branch 'master' of https://github.com/nhutthanh340/Ung-dung-website-chia-se-kien-thuc-lap-trinh-thuat-toan&#10;&#10;# Conflicts:&#10;#&#9;Cài đặt lần 1/Source code/Thành viên/controllers/BaiDangController.js&#10;#&#9;Cài đặt lần 1/Source code/Thành viên/views/single-blog.hbs">
+      <change afterPath="$PROJECT_DIR$/views/baidang.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/controller/AdminControlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/controller/AdminControlers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/controller/BaiDangController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/controller/BaiDangController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/controller/BaiVietController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/controller/BaiVietController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/controller/HomeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/controller/HomeController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/model/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/model/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/model/BaiDang.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/model/BaiDang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/model/BaiViet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/model/BaiViet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/model/TheLoaiBaiViet.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/model/TheLoaiBaiViet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/views/baidang/baidang.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/views/baidang/baidang.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/views/baidang/editBaiDang.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/views/baidang/editBaiDang.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/views/baiviet/baiviet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/views/baiviet/baiviet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/views/baiviet/editBaiViet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/views/baiviet/editBaiViet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Admin/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/../Admin/views/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/BaiDangController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/BaiDangController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/BaiVietController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/BaiVietController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/BaiDang.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/BaiDang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/BaiViet.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/BaiViet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/guibaiviet.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/guibaiviet.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/single-blog.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/single-blog.hbs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/BaiDangController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+            <state relative-caret-position="168">
+              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -52,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/single-blog.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            <state relative-caret-position="468">
+              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
@@ -73,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/NoiDungBaiViet/1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="792">
-              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+              <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -159,7 +176,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="21" />
     <option name="y" value="35" />
     <option name="width" value="1346" />
@@ -284,7 +301,7 @@
       <workItem from="1560011588173" duration="2289000" />
       <workItem from="1560045771012" duration="22657000" />
       <workItem from="1560133479734" duration="15077000" />
-      <workItem from="1560231071885" duration="21747000" />
+      <workItem from="1560231071885" duration="22009000" />
     </task>
     <task id="LOCAL-00001" summary="Change menu when Authenticate">
       <created>1560066356074</created>
@@ -307,11 +324,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560150994914</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Template BaiDang">
+      <created>1560263688712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560263688712</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142843000" />
+    <option name="totallyTimeSpent" value="143105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -323,7 +347,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32820514" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30940172" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30940172" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.8632479" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -331,7 +355,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.051282052" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.15726496" />
       <window_info anchor="bottom" id="GraphQL" order="11" weight="0.46324787" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -345,7 +369,8 @@
     <MESSAGE value="Change menu when Authenticate" />
     <MESSAGE value="Fix Login, SignUp, XemBaiViet, ThemBaiViet, Authentication" />
     <MESSAGE value="Send Activation Email" />
-    <option name="LAST_COMMIT_MESSAGE" value="Send Activation Email" />
+    <MESSAGE value="Template BaiDang" />
+    <option name="LAST_COMMIT_MESSAGE" value="Template BaiDang" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -553,14 +578,14 @@
     <entry file="file://$PROJECT_DIR$/NoiDungBaiViet/1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/single-blog.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        <state relative-caret-position="468">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" />
@@ -591,8 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/BaiDangController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        <state relative-caret-position="168">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
         </state>
       </provider>
     </entry>
