@@ -19,41 +19,31 @@
                                 Người gửi
                             </th>
                             <th>
-                                Ngày gửi
-                            </th>
-                            <th>
-                                Tóm tắt
+                                Trạng thái
                             </th>
                             <th>
                                 Chỉnh sửa
                             </th>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>
-                                    ABC
-                                </td>
-                                <td>
-                                    Trí tuệ nhân tạo
-                                </td>
-                                <td>
-                                    Lương Ngọc Vũ
-                                </td>
-                                <td>
-                                    12/06/2018
-                                </td>
-                                <td>
-                                    WhiteHub – Giải pháp kiểm thử bảo mật tối ưu cho doanh nghiệp
-                                </td>
-                                <td>
-                                    <div class="update ml-auto mr-auto">
-                                        <a href="/baiviet/editBaiViet">
-                                            <button type="submit" class="btn btn-primary btn-square">Chỉnh sửa
-                                            </button>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
+                            {{#each baiviet}}
+                                <tr>
+                                    <td>{{this.tenbaiviet}}</td>
+                                    <td>{{this.tentheloai}}</td>
+                                    <td>{{this.hoten}}</td>
+                                    <td id="tt">{{this.trangthai}}</td>
+                                    <td>
+                                        <div class="update ml-auto mr-auto">
+                                            <a href="/baiviet/edit/{{this.id}}">
+                                                <button id="btnEditPost" name=btnEditPost" type="submit"
+                                                        class="btn btn-primary btn-square" readonly>Chỉnh sửa
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            {{/each}}
+                            </tbody>
                         </table>
                     </div>
                 </div>

@@ -16,6 +16,13 @@ exports.readAll = async function () {
     return result[0];
 };
 
+exports.readAnhGetNamePostType = async function (id) {
+    const sql = 'select BV.id, TL.tentheloai, BV.tenbaiviet, BV.trangthai from baiviet BV, theloaibaiviet TL where BV.idtheloaibaiviet=TL.id and' +
+        ' BV.idnguoigui=?';
+    const result = await Connection.promise().query(sql, id);
+    return result[0];
+};
+
 exports.readAll = async function (idnguoigui) {
     const result = await Connection.promise().query('select * from baiviet where idnguoigui=?', idnguoigui);
     return result[0];

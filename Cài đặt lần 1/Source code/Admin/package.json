@@ -3,12 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
+    "date-and-time": "^0.7.0",
+    "date-time": "^3.1.0",
+    "datetime": "0.0.3",
     "debug": "~2.6.9",
     "dotenv": "^8.0.0",
     "ejs": "^2.6.1",
@@ -22,11 +25,11 @@
     "morgan": "~1.9.1",
     "mysql": "^2.17.1",
     "mysql2": "^1.6.5",
+    "nodemon": "^1.19.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "@types/express": "^4.16.1",
-    "nodemon": "^1.19.0"
+    "@types/express": "^4.16.1"
   }
 }

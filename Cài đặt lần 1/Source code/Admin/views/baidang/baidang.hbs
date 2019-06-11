@@ -19,12 +19,6 @@
                                 Người gửi
                             </th>
                             <th>
-                                Ngày gửi
-                            </th>
-                            <th>
-                                Tóm tắt
-                            </th>
-                            <th>
                                 Cập nhật
                             </th>
                             <th>
@@ -32,39 +26,30 @@
                             </th>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>
-                                    ABC
-                                </td>
-                                <td>
-                                    Trí tuệ nhân tạo
-                                </td>
-                                <td>
-                                    Lương Ngọc Vũ
-                                </td>
-                                <td>
-                                    12/06/2018
-                                </td>
-                                <td>
-                                    WhiteHub – Giải pháp kiểm thử bảo mật tối ưu cho doanh nghiệp
-                                </td>
-                                <td>
-                                    <div class="update ml-auto mr-auto">
-                                        <a href="/baidang/editBaiDang">
-                                            <button type="submit" class="btn btn-primary btn-square">Cập nhật
-                                            </button>
-                                        </a>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="update ml-auto mr-auto">
-                                        <a href="/baidang/editBaiDang">
-                                            <button type="submit" class="btn btn-primary btn-square">Xóa
-                                            </button>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
+                            {{#each baidang}}
+                                <tr>
+                                    <td>{{this.tenbaiviet}}</td>
+                                    <td>{{this.tentheloai}}</td>
+                                    <td>{{this.hoten}}</td>
+                                    <td>
+                                        <div class="update ml-auto mr-auto">
+                                            <a href="/baidang/edit/{{this.id}}">
+                                                <button type="submit" class="btn btn-primary btn-square">Cập nhật
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="update ml-auto mr-auto">
+                                            <a href="/baidang/deleteBaiDang/{{this.id}}">
+                                                <button type="submit" class="btn btn-primary btn-square">Xóa
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            {{/each}}
+                            </tbody>
                         </table>
                     </div>
                 </div>

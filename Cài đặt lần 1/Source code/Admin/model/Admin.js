@@ -6,6 +6,11 @@ exports.readAllAdmin = async function () {
     return result[0];
 };
 
+exports.readOneAdmin = async function (email) {
+    const result = await Connection.promise().query('select * from nguoidung where idloainguoidung = ? and email = ?', [2, email]);
+    return result[0];
+};
+
 exports.checkEmailExist = async function (email) {
     const sql = "SELECT COUNT(*) AS cnt FROM nguoidung WHERE email = ? ";
     const result = await Connection.promise().query(sql, email);
@@ -16,7 +21,7 @@ exports.checkEmailExist = async function (email) {
 
 exports.insertNewAdmin = async function (hoten, tendangnhap, email, trinhdohocvan, matkhau, ngaysinh, idloainguoidung) {
     const hash = await bcrypt.hash(matkhau, 10);
-    const sqlInsert = "INSERT INTO nguoidung(hoten,tendangnhap,email,trinhdohocvan,matkhau,ngaysinh,idloainguoidung) VALUES (?,?,?,?,?,?,?)";
+    const sqlInsert = "INSERT INTO nguoidung(hoten,tendangnhap,email,trinhdohocvan,matkhau,ngaysinh,idloainguoidung) VALUES(?,?,?,?,?,?,?)";
     const result = await Connection.promise().query(sqlInsert, [hoten, tendangnhap, email, trinhdohocvan, hash, ngaysinh, idloainguoidung]);
     return result;
 };

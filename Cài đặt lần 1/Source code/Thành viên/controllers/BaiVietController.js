@@ -8,7 +8,7 @@ exports.FormGuiBaiViet = async function (req, res) {
 
 exports.XemBaiViet = async function (req, res) {
     const type = await TheLoai.readAll();
-    const baiviet = await BaiViet.readAll(req.user.id);
+    const baiviet = await BaiViet.readAnhGetNamePostType(req.user.id);
     res.render('xembaiviet', {user: req.user, type, baiviet});
 };
 

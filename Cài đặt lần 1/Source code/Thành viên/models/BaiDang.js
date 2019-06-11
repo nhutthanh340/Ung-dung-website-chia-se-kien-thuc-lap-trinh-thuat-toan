@@ -21,3 +21,15 @@ exports.insert = async function (data) {
 exports.update = async function (data) {
     return await Connection.promise().query('update baidang set ?', data);
 };
+
+exports.readByTypePost = async function (id) {
+    const sql = 'select TL.tentheloai, BD.id, BD.ngaydang, BV.tenbaiviet, BV.tomtat from theloaibaiviet TL, baidang BD, baiviet BV where BV.id=BD.idbaiviet and TL.id=BV.idtheloaibaiviet and BV.idtheloaibaiviet = ?';
+    const result = await Connection.promise().query(sql, id);
+    return result[0];
+};
+
+exports.readDetailPostById = async function (id) {
+    const sql = 'select TL.tentheloai, BD.id, BD.ngaydang, BV.tenbaiviet, BV.noidung from theloaibaiviet TL, baidang BD, baiviet BV where BV.id=BD.idbaiviet and TL.id=BV.idtheloaibaiviet and BD.id = ?';
+    const result = await Connection.promise().query(sql, id);
+    return result[0];
+};
