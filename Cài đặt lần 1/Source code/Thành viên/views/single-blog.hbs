@@ -29,7 +29,7 @@
                                 <a class="active" href="#">{{detail.tentheloai}}</a>
                             </div>
                             <ul class="blog_meta list">
-                                <li><a href="#">{{user.email}}<i class="lnr lnr-user"></i></a></li>
+                                <li><a href="#">{{detail.hoten}}<i class="lnr lnr-user"></i></a></li>
                                 <li><a href="#">{{detail.ngaydang}}<i class="lnr lnr-calendar-full"></i></a></li>
                                 <li><a href="#">05 bình luận<i class="lnr lnr-bubble"></i></a></li>
                             </ul>
@@ -41,26 +41,31 @@
                             </ul>
                         </div>
                     </div>
-                    <<<<<<< HEAD
                     {{{Content}}}
-                    =======
                     <div class="col-lg-9 col-md-9 blog_details">
                         <h2>{{detail.tenbaiviet}}</h2>
                         <p class="excert">
-                            {{detail.noidung}}
+                            {{detail.tomtat}}
                         </p>
                     </div>
                     <div class="col-lg-12">
                         <div class="row">
-                            <div class="col-6">
-                                <img class="img-fluid" src="img/blog/post-img1.jpg" alt="">
-                            </div>
-                            <div class="col-6">
-                                <img class="img-fluid" src="img/blog/post-img2.jpg" alt="">
+                            <div class="col-lg-12 mt-25">
+                                <p >{{detail.noidung}}</p>
                             </div>
                         </div>
                     </div>
-                    >>>>>>> 531920a40c3919f476ddf899dec15e5d09d1b54f
+
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="img-fluid" src="/img/blog/post-img1.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="/img/blog/post-img2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="comments-area">
                     <h4>05 bình luận</h4>
@@ -151,10 +156,10 @@
                         <div class="row">
                             {{#unless isAuthenticated}}
                                 <div class="form-group col-lg-6 col-md-6 name">
-                                    <input type="text" class="form-control" name="hoten" value="{{user.hoten}}">
+                                    <input placeholder="Nhập họ tên" type="text" class="form-control" name="hoten" value="{{user.hoten}}">
                                 </div>
                                 <div class="form-group col-lg-6 col-md-6 email">
-                                    <input type="email" class="form-control" name="email" value="{{user.email}}">
+                                    <input placeholder="Nhập email" type="email" class="form-control" name="email" value="{{user.email}}">
                                 </div>
                             {{/unless}}
                         </div>
@@ -179,43 +184,41 @@
                         <div class="br"></div>
                     </aside>
                     <aside class="single_sidebar_widget author_widget">
-                        <img class="author_img rounded-circle" src="img/blog/author.png" alt="">
-                        <h4>Tên tác giả</h4>
-                        <p>Senior blog writer (vai trò)</p>
+                        <img class="author_img rounded-circle" src="/img/blog/author.png" alt="">
+                        <h4>{{detail.hoten}}</h4>
                         <div class="social_icon">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-github"></i></a>
                             <a href="#"><i class="fa fa-behance"></i></a>
                         </div>
-                        <p>Giới thiệu tác giả.</p>
                         <div class="br"></div>
                     </aside>
                     <aside class="single_sidebar_widget popular_post_widget">
                         <h3 class="widget_title">Bài viết xem nhiều</h3>
                         <div class="media post_item">
-                            <img src="img/blog/popular-post/post1.jpg" alt="post">
+                            <img src="/img/blog/popular-post/post1.jpg" alt="post">
                             <div class="media-body">
                                 <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
                                 <p>02 giờ trước</p>
                             </div>
                         </div>
                         <div class="media post_item">
-                            <img src="img/blog/popular-post/post2.jpg" alt="post">
+                            <img src="/img/blog/popular-post/post2.jpg" alt="post">
                             <div class="media-body">
                                 <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
                                 <p>02 giờ trước</p>
                             </div>
                         </div>
                         <div class="media post_item">
-                            <img src="img/blog/popular-post/post3.jpg" alt="post">
+                            <img src="/img/blog/popular-post/post3.jpg" alt="post">
                             <div class="media-body">
                                 <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
                                 <p>02 giờ trước</p>
                             </div>
                         </div>
                         <div class="media post_item">
-                            <img src="img/blog/popular-post/post4.jpg" alt="post">
+                            <img src="/img/blog/popular-post/post4.jpg" alt="post">
                             <div class="media-body">
                                 <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
                                 <p>02 giờ trước</p>
