@@ -1,0 +1,109 @@
+<!--================Home Banner Area =================-->
+<section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"
+             data-background=""></div>
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2>Đăng ký</h2>
+                <div class="page_link"><br>
+                    <a href="/index">Trang chủ</a>
+                    <a href="/singup">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Home Banner Area =================-->
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <div class="login100-pic js-tilt" data-tilt>
+                <img src="images/img-01.png" alt="IMG">
+            </div>
+            {{message}}
+            <form class="login100-form validate-form" method="post">
+					<span class="login100-form-title">
+						Đăng ký
+					</span>
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" id="hoten" name="hoten" placeholder="Tên đầy đủ">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-info-circle" aria-hidden="true"></i>
+						</span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" id="tendangnhap" name="tendangnhap" placeholder="Tên đăng nhập">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-info" aria-hidden="true"></i>
+					</span>
+                </div>
+                <div id="checkUserNameValid" style="margin-left: 30px">
+                </div>
+                <div class="wrap-input100 validate-input"
+                     data-validate="Bạn chưa nhập email hoặc email không đúng định dạng">
+                    <input class="input100" type="text" id="email" name="email" placeholder="Email">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-envelope-open" aria-hidden="true"></i>
+					</span>
+                </div>
+
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="date" id="ngaysinh" name="ngaysinh" placeholder="Ngày sinh">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" id="trinhdohocvan" name="trinhdohocvan"
+                           placeholder="Trình độ học vấn">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-address-card-o" aria-hidden="true"></i>
+						</span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Bạn chưa nhập mật khẩu">
+                    <input class="input100" type="password" id="matkhau" name="matkhau" placeholder="Mật khẩu">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                </div>
+                <div id="levelPass" style="margin-left: 30px">
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Bạn chưa nhập lại mật khẩu">
+                    <input class="input100" type="password" id="matkhaunhaplai" placeholder="Nhập lại mật khẩu">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+                </div>
+                <div id="CheckRePass" style="margin-left: 30px"></div>
+
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Tạo tài khoản
+                    </button>
+                </div>
+                <div class="text-center p-t-136">
+                    <a class="txt2" href="/login">
+                        Về trang đăng nhập
+                        <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

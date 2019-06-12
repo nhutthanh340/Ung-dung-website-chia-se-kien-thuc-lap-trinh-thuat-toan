@@ -1,0 +1,42 @@
+<!--================Home Banner Area =================-->
+<section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0"
+             data-background=""></div>
+        <div class="container">
+            <div class="banner_content text-center">
+                <h2>Xem bài viết đã gửi</h2>
+                <div class="page_link"><br>
+                    <a href="/index">Trang chủ</a>
+                    <a href="/xembaiviet">Bài viết đã gửi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Home Banner Area =================-->
+
+<section class="contact_area p_120">
+    <div class="container">
+        <h1>Bài viết đã gửi</h1>
+        <br><br>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Tên bài viết</th>
+                <th scope="col">Thể loại</th>
+                <th scope="col">Trạng thái</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each baiviet}}
+                <tr>
+                    <td>{{this.tenbaiviet}}</td>
+                    <td>{{this.tentheloai}}</td>
+                    <td>{{this.trangthai}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</section>
