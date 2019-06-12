@@ -31,6 +31,16 @@
                             <ul class="blog_meta list">
                                 <li><a href="#">{{detail.hoten}}<i class="lnr lnr-user"></i></a></li>
                                 <li><a href="#">{{detail.ngaydang}}<i class="lnr lnr-calendar-full"></i></a></li>
+                                <li><a href="#">Chia sẻ bài viết<i class="lnr lnr-camera"></i></a></li>
+                                {{#if isAuthenticated}}
+                                    <form method="post" action="/thichBaiDang/{{detail.idbaiviet}}">
+                                        <li><button>Thích bài viết<i
+                                                class="lnr lnr-heart"></i></button></li>
+                                    </form>
+                                {{/if}}
+                                <br>
+                                <li><a href="#">Số lượt thích : {{like.soluong}}<i class="lnr lnr-heart-pulse"></i></a>
+                                </li>
                                 <li><a href="#">05 bình luận<i class="lnr lnr-bubble"></i></a></li>
                             </ul>
                             <ul class="social-links">
@@ -51,7 +61,7 @@
                     <div class="col-lg-12">
                         <div class="row">
                             <div class="col-lg-12 mt-25">
-                                <p >{{detail.noidung}}</p>
+                                <p>{{detail.noidung}}</p>
                             </div>
                         </div>
                     </div>
@@ -156,10 +166,12 @@
                         <div class="row">
                             {{#unless isAuthenticated}}
                                 <div class="form-group col-lg-6 col-md-6 name">
-                                    <input placeholder="Nhập họ tên" type="text" class="form-control" name="hoten" value="{{user.hoten}}">
+                                    <input placeholder="Nhập họ tên" type="text" class="form-control" name="hoten"
+                                           value="{{user.hoten}}">
                                 </div>
                                 <div class="form-group col-lg-6 col-md-6 email">
-                                    <input placeholder="Nhập email" type="email" class="form-control" name="email" value="{{user.email}}">
+                                    <input placeholder="Nhập email" type="email" class="form-control" name="email"
+                                           value="{{user.email}}">
                                 </div>
                             {{/unless}}
                         </div>
