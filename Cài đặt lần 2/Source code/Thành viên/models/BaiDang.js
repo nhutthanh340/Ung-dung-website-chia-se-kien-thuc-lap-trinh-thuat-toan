@@ -28,6 +28,12 @@ exports.readByTypePost = async function (id) {
     return result[0];
 };
 
+exports.readNameType = async function (id) {
+    const sql = 'select * from theloaibaiviet where id=?';
+    const result = await Connection.promise().query(sql, id);
+    return result[0];
+};
+
 exports.readDetailBlogById = async function (id) {
     const sql = 'select BD.idbaiviet, BV.tomtat, ND.hoten, TL.tentheloai, BD.id, BD.ngaydang, BV.tenbaiviet, BV.noidung from nguoidung ND, theloaibaiviet TL, baidang BD, baiviet BV where ND.id=BV.idnguoigui and BV.id=BD.idbaiviet and TL.id=BV.idtheloaibaiviet and BD.id = ?';
     const result = await Connection.promise().query(sql, id);
@@ -61,5 +67,16 @@ exports.insertTableLike = async function (id, number) {
 exports.readContentPostByIdBlog = async function (id) {
     const sql = "select * from baiviet BV, baidang BD where BV.id=BD.idbaiviet and BV.id = ?";
     const result = await Connection.promise().query(sql, id);
+    return result[0];
+};
+
+exports.insertTableComment = async function (idUser, idBaiDang, noiDung) {
+    const sql = 'insert into binhluan(idnguoidung,idbaidang,noidung) values(?,?,?)';
+    return await Connection.promise().query(sql, [idUser, idBaiDang, noiDung]);
+};
+
+exports.readTableCommentByIdPost = async function (idBaiDang) {
+    const sql = 'select BL.noidung, ND.hoten, BL.idbaidang, BL.idnguoidung from binhluan BL, nguoidung ND where BL.idnguoidung=ND.id and BL.idbaidang=?';
+    const result = await Connection.promise().query(sql, [idBaiDang]);
     return result[0];
 };

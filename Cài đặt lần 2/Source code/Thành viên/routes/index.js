@@ -20,6 +20,7 @@ router.get('/logout', User.logout);
 router.get('/xembaiviet', User.isLoggedIn, BaiViet.XemBaiViet);
 router.get('/Verify/:Verify', User.Verify);
 
+router.post('/postComment/:id', BaiDang.PostComment);
 router.post('/thichBaiDang/:id', BaiDang.likeBlog);
 router.post('/searchBlog', BaiDang.searchBlog);
 router.post('/guibaiviet', BaiViet.ThemBaiViet);

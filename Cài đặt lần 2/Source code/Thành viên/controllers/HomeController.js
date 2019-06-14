@@ -1,6 +1,8 @@
 const TheLoai = require('../models/TheLoaiBaiViet');
+const Home = require('../models/Home');
 
 exports.HomePage = async function (req, res) {
     const type = await TheLoai.readAll();
-    res.render('index', {user: req.user, type});
+    const blog = await Home.getHomePage();
+    res.render('index', {user: req.user, type, blog});
 };

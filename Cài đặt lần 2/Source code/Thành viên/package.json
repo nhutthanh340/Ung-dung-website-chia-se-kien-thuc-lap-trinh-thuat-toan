@@ -9,6 +9,7 @@
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
+    "date-and-time": "^0.7.0",
     "debug": "~2.6.9",
     "dotenv": "^8.0.0",
     "ejs": "^2.6.1",
@@ -16,6 +17,8 @@
     "express-ejs-layouts": "^2.5.0",
     "express-session": "^1.16.1",
     "express-validator": "^5.3.1",
+    "fs": "0.0.1-security",
+    "handlebars": "latest",
     "hbs": "~4.0.4",
     "helper": "0.0.13",
     "http-errors": "~1.6.3",
@@ -28,9 +31,9 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sendmail": "^1.4.1",
+    "share-facebook": "0.0.1",
     "sql-model": "^1.1.0",
-    "strong-pass": "0.0.4",
-    "handlebars": "latest"
+    "strong-pass": "0.0.4"
   },
   "devDependencies": {
     "@types/express": "^4.17.0"

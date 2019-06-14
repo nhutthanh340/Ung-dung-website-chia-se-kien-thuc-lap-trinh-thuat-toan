@@ -7,8 +7,10 @@ const BaiDang = require('../models/BaiDang');
 exports.ShowPostByType = async function (req, res) {
     const idTypePost = req.params.id;
     const post = await BaiDang.readByTypePost(idTypePost);
+    const name = await BaiDang.readNameType(idTypePost);
+    const nametype = JSON.parse(JSON.stringify(name[0]));
     const type = await TheLoai.readAll();
-    res.render('baidang', {user: req.user, type: type, post: post});
+    res.render('baidang', {user: req.user, type: type, post: post, nametype});
 };
 
 exports.DetailBlog = async function (req, res) {
@@ -19,7 +21,8 @@ exports.DetailBlog = async function (req, res) {
     const detail = JSON.parse(JSON.stringify(detail_1[0]));
     const likeTable = await BaiDang.readTableLikeBlog(detail.idbaiviet);
     const like = JSON.parse(JSON.stringify(likeTable[0]));
-    res.render('single-blog', {user: req.user, type, detail, Content, like});
+    const comment = await BaiDang.readTableCommentByIdPost(idPost);
+    res.render('single-blog', {user: req.user, type, detail, Content, like, comment});
 };
 
 exports.searchBlog = async function (req, res) {
@@ -40,5 +43,15 @@ exports.likeBlog = async function (req, res) {
     soluotthich = soluotthich + 1;
 
     await BaiDang.insertTableLike(idPost, soluotthich);
+    res.redirect('/index');
+};
+
+exports.PostComment = async function (req, res) {
+    const type = await TheLoai.readAll();
+    const idPost = req.params.id;
+    const detail_1 = await BaiDang.readDetailBlogById(idPost);
+    const detail = JSON.parse(JSON.stringify(detail_1[0]));
+    const comment = await BaiDang.readTableCommentByIdPost(idPost);
+    const result = await BaiDang.insertTableComment(req.user.id, idPost, req.body.noidung);
     res.redirect('/index');
 };

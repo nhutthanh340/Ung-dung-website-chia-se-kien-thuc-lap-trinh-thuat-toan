@@ -114,7 +114,8 @@ exports.isLoggedIn = function (req, res, next) {
 };
 
 exports.PostUpdateUserInformation = async function (req, res) {
-    await User.update(req.body);
+    const id = req.params.id;
+    await User.update(req.body, id);
     res.redirect('/index');
 };
 

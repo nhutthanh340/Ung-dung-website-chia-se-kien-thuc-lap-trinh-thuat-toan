@@ -18,6 +18,6 @@ exports.insert = async function (data) {
     return await Connection.promise().query('insert into nguoidung set ?', data);
 };
 
-exports.update = async function (data) {
-    return await Connection.promise().query('update nguoidung set ? where id=?', [data, data.id]);
+exports.update = async function (data, id) {
+    return await Connection.promise().query('update nguoidung set ? where id=?', [data, id]);
 };

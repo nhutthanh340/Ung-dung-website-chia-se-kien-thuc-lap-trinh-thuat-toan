@@ -7,7 +7,7 @@
             <div class="banner_content text-center">
                 <h3>Học lập trình để thay đổi thế giới</h3>
                 <h5>Không bao giờ là trễ nếu bạn bắt đầu từ bây giờ</h5>
-                <a class="main_btn" href="/blog">Bắt đầu ngay</a>
+                <a class="main_btn" href="/baidang/1">Bắt đầu ngay</a>
             </div>
         </div>
     </div>
@@ -79,74 +79,23 @@
             <p>Sự quan tâm của bạn là động lực để chúng tôi phát triển từng ngày</p>
         </div>
         <div class="row courses_inner">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="grid_inner">
-                    <div class="grid_item wd55">
-                        <div class="courses_item">
-                            <img src="img/courses/course-1.jpg" alt="">
-                            <div class="hover_text">
-                                <a href="/single-blog"><h4>Các mẫu thiết kế hướng đối tượng</h4></a>
-                                <ul class="list">
-                                    <li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
-                                    <li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
-                                    <li><a href="#"><i class="lnr lnr-user"></i> T. Robert</a></li>
-                                </ul>
+                    {{#each blog}}
+                        <div class="grid_item wd44">
+                            <div class="courses_item">
+                                <img src="img/courses/course-1.jpg" alt="">
+                                <div class="hover_text">
+                                    <a href="/detail/{{this.id}}"><h4>{{this.tenbaiviet}}</h4></a>
+                                    <ul class="list">
+                                        <li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
+                                        <li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
+                                        <li><a href="#"><i class="lnr lnr-user"></i>{{this.hoten}}</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="grid_item wd44">
-                        <div class="courses_item">
-                            <img src="img/courses/course-2.jpg" alt="">
-                            <div class="hover_text">
-                                <a href="/single-blog"><h4>Kiến trúc YOLO</h4></a>
-                                <ul class="list">
-                                    <li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
-                                    <li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
-                                    <li><a href="#"><i class="lnr lnr-user"></i> T. Robert</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid_item wd44">
-                        <div class="courses_item">
-                            <img src="img/courses/course-4.jpg" alt="">
-                            <div class="hover_text">
-                                <a href="/single-blog"><h4>In các số từ 1 đến 1000 mà không dùng vòng lặp hoặc đệ
-                                    quy</h4></a>
-                                <ul class="list">
-                                    <li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
-                                    <li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
-                                    <li><a href="#"><i class="lnr lnr-user"></i> T. Robert</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid_item wd55">
-                        <div class="courses_item">
-                            <img src="img/courses/course-5.jpg" alt="">
-                            <div class="hover_text">
-                                <a href="/single-blog"><h4>Cách giải những bài toán quy hoạch động</h4></a>
-                                <ul class="list">
-                                    <li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
-                                    <li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
-                                    <li><a href="#"><i class="lnr lnr-user"></i> T. Robert</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="course_item">
-                    <img src="img/courses/course-3.jpg" alt="">
-                    <div class="hover_text">
-                        <a href="/single-blog"><h4>Ngôn ngữ lập trình thông dụng</h4></a>
-                        <ul class="list">
-                            <li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
-                            <li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
-                            <li><a href="#"><i class="lnr lnr-user"></i> T. Robert</a></li>
-                        </ul>
-                    </div>
+                    {{/each}}
                 </div>
             </div>
         </div>
