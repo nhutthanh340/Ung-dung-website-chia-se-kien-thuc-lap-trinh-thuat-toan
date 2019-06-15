@@ -8,6 +8,7 @@ const User = require("../controllers/UserController");
 const BaiViet = require("../controllers/BaiVietController");
 
 router.get('/baidang/:id', BaiDang.ShowPostByType);
+router.get('/danhsachyeuthich/:id', BaiDang.ShowFavoriteBlogs);
 router.get('/index', HomePage.HomePage);
 router.get('/', HomePage.HomePage);
 router.get('/guibaiviet', User.isLoggedIn, BaiViet.FormGuiBaiViet);

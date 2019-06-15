@@ -33,11 +33,14 @@ exports.readContentPostByIdBlog = async function (id) {
 };
 
 exports.deleteBlog = async function (idBD, idBV) {
-    const sqlBD = "delete from baidang where id = ?";
-    const resultBD = await Connection.promise().query(sqlBD, idBD);
-
     const sqlLike = "delete from luotthich where idbv = ?";
     const resultLike = await Connection.promise().query(sqlLike, idBV);
+
+    const sqlCmt = "delete from binhluan where idbaidang = ?";
+    const resultCmt = await Connection.promise().query(sqlCmt, idBD);
+
+    const sqlBD = "delete from baidang where id = ?";
+    const resultBD = await Connection.promise().query(sqlBD, idBD);
 
     const sqlBV = "delete from baiviet where id = ?";
     const resultBV = await Connection.promise().query(sqlBV, idBV);
