@@ -8,7 +8,6 @@ const User = require("../controllers/UserController");
 const BaiViet = require("../controllers/BaiVietController");
 
 router.get('/baidang/:id', BaiDang.ShowPostByType);
-router.get('/danhsachyeuthich/:id', BaiDang.ShowFavoriteBlogs);
 router.get('/index', HomePage.HomePage);
 router.get('/', HomePage.HomePage);
 router.get('/guibaiviet', User.isLoggedIn, BaiViet.FormGuiBaiViet);
@@ -22,7 +21,6 @@ router.get('/xembaiviet', User.isLoggedIn, BaiViet.XemBaiViet);
 router.get('/Verify/:Verify', User.Verify);
 
 router.post('/postComment/:id', BaiDang.PostComment);
-router.post('/thichBaiDang/:id', BaiDang.likeBlog);
 router.post('/searchBlog', BaiDang.searchBlog);
 router.post('/guibaiviet', BaiViet.ThemBaiViet);
 router.post('/login', User.Authenticate);

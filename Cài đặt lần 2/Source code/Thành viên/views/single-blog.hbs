@@ -33,16 +33,6 @@
                                 <li><a href="#">{{detail.ngaydang}}<i class="lnr lnr-calendar-full"></i></a></li>
                                 <li><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">Chia
                                     sẻ bài viết<i class="lnr lnr-camera"></i></a></li>
-                                {{#if isAuthenticated}}
-                                    <form method="post" action="/thichBaiDang/{{detail.idbaiviet}}">
-                                        <li>
-                                            <button>Thích bài viết<i class="lnr lnr-heart"></i></button>
-                                        </li>
-                                    </form>
-                                {{/if}}
-                                <br>
-                                <li><a href="#">Số lượt thích : {{like.soluong}}<i class="lnr lnr-heart-pulse"></i></a>
-                                </li>
                             </ul>
                             <ul class="social-links">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -52,6 +42,7 @@
                             </ul>
                         </div>
                     </div>
+                    {{{Content}}}
                     <div class="col-lg-9 col-md-9 blog_details">
                         <h2>{{detail.tenbaiviet}}</h2>
                         <br>
