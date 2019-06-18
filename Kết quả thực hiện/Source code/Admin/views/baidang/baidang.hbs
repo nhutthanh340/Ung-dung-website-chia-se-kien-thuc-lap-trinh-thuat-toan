@@ -1,0 +1,59 @@
+<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Danh sách bài đã đăng</h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class=" text-primary">
+                            <th>
+                                Tiêu đề
+                            </th>
+                            <th>
+                                Chủ đề
+                            </th>
+                            <th>
+                                Người gửi
+                            </th>
+                            <th>
+                                Cập nhật
+                            </th>
+                            <th>
+                                Xóa
+                            </th>
+                            </thead>
+                            <tbody>
+                            {{#each baidang}}
+                                <tr>
+                                    <td>{{this.tenbaiviet}}</td>
+                                    <td>{{this.tentheloai}}</td>
+                                    <td>{{this.hoten}}</td>
+                                    <td>
+                                        <div class="update ml-auto mr-auto">
+                                            <a href="/baidang/edit/{{this.id}}">
+                                                <button type="submit" class="btn btn-primary btn-square">Cập nhật
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="update ml-auto mr-auto">
+                                            <a href="/baidang/delete/{{this.id}}">
+                                                <button type="submit" class="btn btn-primary btn-square">Xóa
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
