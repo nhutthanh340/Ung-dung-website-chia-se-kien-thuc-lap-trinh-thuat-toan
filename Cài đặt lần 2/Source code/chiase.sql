@@ -3,7 +3,8 @@
 -- Host: localhost    Database: chiase
 -- ------------------------------------------------------
 -- Server version	8.0.15
-
+DROP schema IF EXISTS `chiase`;
+CREATE SCHEMA `chiase`;
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -18,13 +19,13 @@
 --
 -- Table structure for table `baidang`
 --
-
+use `chiase`;
 DROP TABLE IF EXISTS `baidang`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `baidang` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `idbaiviet` int(10) unsigned NOT NULL,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `idbaiviet` int unsigned NOT NULL,
   `ngaydang` date NOT NULL,
   `linknoidung` longtext,
   PRIMARY KEY (`id`),
@@ -51,11 +52,11 @@ DROP TABLE IF EXISTS `baiviet`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `baiviet` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
   `tenbaiviet` text NOT NULL,
-  `idtheloaibaiviet` int(10) unsigned NOT NULL,
+  `idtheloaibaiviet` int unsigned NOT NULL,
   `noidung` longtext NOT NULL,
-  `idnguoigui` int(10) unsigned NOT NULL,
+  `idnguoigui` int unsigned NOT NULL,
   `trangthai` varchar(45) DEFAULT NULL,
   `tomtat` longtext,
   PRIMARY KEY (`id`),
@@ -84,9 +85,9 @@ DROP TABLE IF EXISTS `binhluan`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `binhluan` (
-  `idnguoidung` int(10) unsigned NOT NULL,
-  `idbaidang` int(10) unsigned NOT NULL,
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `idnguoidung` int unsigned NOT NULL,
+  `idbaidang` int unsigned NOT NULL,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
   `noidung` longtext,
   PRIMARY KEY (`id`),
   KEY `fk_binhluan_baidang` (`idbaidang`),
@@ -115,8 +116,8 @@ DROP TABLE IF EXISTS `chiase`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `chiase` (
   `id` int(11) NOT NULL,
-  `idnguoidung` int(10) unsigned NOT NULL,
-  `idbaidang` int(10) unsigned NOT NULL,
+  `idnguoidung` int unsigned NOT NULL,
+  `idbaidang` int unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_chiase_nguoidung` (`idnguoidung`),
   KEY `fk_chiase_baidang` (`idbaidang`),
@@ -142,7 +143,7 @@ DROP TABLE IF EXISTS `loainguoidung`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `loainguoidung` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
   `tenloai` tinytext NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -166,8 +167,8 @@ DROP TABLE IF EXISTS `luotthich`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `luotthich` (
-  `idnguoidung` int(10) unsigned NOT NULL,
-  `idbaidang` int(10) unsigned NOT NULL,
+  `idnguoidung` int unsigned NOT NULL,
+  `idbaidang` int unsigned NOT NULL,
   PRIMARY KEY (`idnguoidung`,`idbaidang`),
   KEY `fk_luotthich_baidang` (`idbaidang`),
   CONSTRAINT `fk_luotthich_baidang` FOREIGN KEY (`idbaidang`) REFERENCES `baidang` (`id`),
@@ -192,14 +193,14 @@ DROP TABLE IF EXISTS `nguoidung`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `nguoidung` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
   `hoten` text NOT NULL,
   `tendangnhap` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `trinhdohocvan` varchar(100) DEFAULT NULL,
   `matkhau` longtext NOT NULL,
   `ngaysinh` date DEFAULT NULL,
-  `idloainguoidung` int(10) unsigned NOT NULL,
+  `idloainguoidung` int unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_nguoidung_loainguoidung` (`idloainguoidung`),
   CONSTRAINT `fk_nguoidung_loainguoidung` FOREIGN KEY (`idloainguoidung`) REFERENCES `loainguoidung` (`id`)
@@ -224,7 +225,7 @@ DROP TABLE IF EXISTS `theloaibaiviet`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `theloaibaiviet` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
   `tentheloai` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
