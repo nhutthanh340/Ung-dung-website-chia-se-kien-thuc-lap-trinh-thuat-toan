@@ -52,16 +52,20 @@
                     <div class="col-md-12">
                         <label>Nhập nội dung bài viết</label>
                         <div class="form-group">
-                            <textarea class="form-control" name="noidung" id="noidung" rows="1"
-                                      placeholder="Nội dung" required></textarea>
+                            <!--<textarea style="height: 500px; border-color: #3f7f7f" class="form-control" name="noidung"
+                                      id="noidung" rows="1"
+                                      required><p>Noi dung 1</p>&#13;&#10;<p>Noi dung 2</p></textarea>-->
+                            <textarea rows="1" class="form-control" style="height: 400px;" name="noidung"
+                                      id="noidung" required></textarea>
                         </div>
                     </div>
                     <input name="trangthai" type="hidden" class="form-control" value="Chưa xác nhận">
                     <div class="col-md-12 text-right">
-                        <button type="submit" value="submit" class="btn submit_btn">Gửi đến chúng tôi</button>
+                        <button id="submit" type="submit" value="submit" class="btn submit_btn">Gửi đến chúng tôi</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
+<script src="//cdn.ckeditor.com/4.11.4/full/ckeditor.js"></script>

@@ -53,12 +53,12 @@ exports.readContentPostByIdBlog = async function (id) {
 };
 
 exports.insertTableComment = async function (idUser, idBaiDang, noiDung) {
-    const sql = 'insert into binhluan(idnguoidung,idbaidang,noidung) values(?,?,?)';
+    const sql = 'insert into binhluan(idnguoidung,idbaidang,comment) values(?,?,?)';
     return await Connection.promise().query(sql, [idUser, idBaiDang, noiDung]);
 };
 
 exports.readTableCommentByIdPost = async function (idBaiDang) {
-    const sql = 'select BL.noidung, ND.hoten, BL.idbaidang, BL.idnguoidung from binhluan BL, nguoidung ND where BL.idnguoidung=ND.id and BL.idbaidang=?';
+    const sql = 'select BL.comment, ND.hoten, BL.idbaidang, BL.idnguoidung from binhluan BL, nguoidung ND where BL.idnguoidung=ND.id and BL.idbaidang=?';
     const result = await Connection.promise().query(sql, [idBaiDang]);
     return result[0];
 };

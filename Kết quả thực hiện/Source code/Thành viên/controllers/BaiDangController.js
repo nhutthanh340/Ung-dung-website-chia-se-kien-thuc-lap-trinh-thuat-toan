@@ -40,6 +40,6 @@ exports.PostComment = async function (req, res) {
     const detail_1 = await BaiDang.readDetailBlogById(idPost);
     const detail = JSON.parse(JSON.stringify(detail_1[0]));
     const comment = await BaiDang.readTableCommentByIdPost(idPost);
-    const result = await BaiDang.insertTableComment(req.user.id, idPost, req.body.noidung);
+    const result = await BaiDang.insertTableComment(req.user.id, idPost, req.body.comment);
     res.redirect('/index');
 };
