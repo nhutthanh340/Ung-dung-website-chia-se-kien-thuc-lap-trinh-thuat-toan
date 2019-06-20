@@ -19,192 +19,203 @@
 
 <!--================Blog Area =================-->
 <section class="blog_area single-post-area p_120">
-    <div class="container">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 posts-list">
+<div class="single-post row">
+<div class="col-lg-3  col-md-3">
+<div class="blog_info text-right">
+    <div class="post_tag">
+        <a class="active" href="#">{{detail.tentheloai}}</a>
+    </div>
+<ul class="blog_meta list">
+    <li><a href="#">{{detail.hoten}}<i class="lnr lnr-user"></i></a></li>
+    <li><a href="#">{{detail.ngaydang}}<i class="lnr lnr-calendar-full"></i></a></li>
+    <li><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">Chia
+        sẻ bài viết<i class="lnr lnr-camera"></i></a></li>
+<li>
+        <button id="like" {{#if coThich}}
+                style="color: green"{{/if}}>{{likes}} lượt thích <i class="lnr lnr-heart"></i></button></li>
+
+</ul>
+    <ul class="social-links">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-github"></i></a></li>
+        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+    </ul>
+</div>
+</div>
+    <div class="col-lg-9 col-md-9 blog_details">
+        <h2>{{detail.tenbaiviet}}</h2>
+        <br>
+        <p>{{{Summary}}}</p>
+    </div>
+    <div class="col-lg-12">
         <div class="row">
-            <div class="col-lg-8 posts-list">
-                <div class="single-post row">
-                    <div class="col-lg-3  col-md-3">
-                        <div class="blog_info text-right">
-                            <div class="post_tag">
-                                <a class="active" href="#">{{detail.tentheloai}}</a>
-                            </div>
-                            <ul class="blog_meta list">
-                                <li><a href="#">{{detail.hoten}}<i class="lnr lnr-user"></i></a></li>
-                                <li><a href="#">{{detail.ngaydang}}<i class="lnr lnr-calendar-full"></i></a></li>
-                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">Chia
-                                    sẻ bài viết<i class="lnr lnr-camera"></i></a></li>
-                            </ul>
-                            <ul class="social-links">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 blog_details">
-                        <h2>{{detail.tenbaiviet}}</h2>
-                        <br>
-                        <p>{{detail.tomtat}}</p>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-lg-12 mt-25">
-                                <p>{{{detail.noidung}}}</p>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="comments-area">
-                    <h4>Các bình luận</h4>
-                    {{#each comment}}
-                        <div class="comment-list">
-                            <div class="single-comment justify-content-between d-flex">
-                                <div class="user justify-content-between d-flex">
-                                    <div class="thumb">
-                                        <img src="/img/blog/c2.jpg" alt="">
-                                    </div>
-                                    <div class="desc">
-                                        <h5><a href="#">{{this.hoten}}</a></h5>
-                                        <br>
-                                        <p class="comment">{{this.comment}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {{/each}}
-                </div>
-                {{#if isAuthenticated}}
-                    <div class="comment-form">
-                        <h4>Để lại bình luận của bạn</h4>
-                        <form method="post" action="/postComment/{{detail.id}}">
-                            <div class="row">
-                                <div class="form-group col-lg-6 col-md-6 name">
-                                    <input placeholder="Nhập họ tên" type="text" class="form-control" name="hoten"
-                                           value="{{user.hoten}}">
-                                </div>
-                                <div class="form-group col-lg-6 col-md-6 email">
-                                    <input placeholder="Nhập email" type="email" class="form-control" name="email"
-                                           value="{{user.email}}">
-                                </div>
-                            </div>
-                            <div class="row">
-                            <textarea class="form-control mb-10" rows="5" name="comment" id="comment"
-                                      placeholder="Nhập bình luận"></textarea>
-                            </div>
-                            <br><br>
-                            <button class="primary-btn submit_btn">Bình luận</button>
-                        </form>
-                    </div>
-                {{/if}}
-                {{#unless isAuthenticated}}
-                    <br>
-                    <div class="comment-form">
-                        <a href="/login" class="primary-btn submit_btn">Đăng nhập để bình luận bài viết này</a>
-                    </div>
-                {{/unless}}
-            </div>
-            <div class="col-lg-4">
-                <div class="blog_right_sidebar">
-                    <aside class="single_sidebar_widget search_widget">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Tìm bài viết">
-                            <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button"><i class="lnr lnr-magnifier"></i></button>
-                                    </span>
-                        </div><!-- /input-group -->
-                        <div class="br"></div>
-                    </aside>
-                    <aside class="single_sidebar_widget author_widget">
-                        <img class="author_img rounded-circle" src="/img/blog/author.png" alt="">
-                        <h4>{{detail.hoten}}</h4>
-                        <div class="social_icon">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
-                            <a href="#"><i class="fa fa-behance"></i></a>
-                        </div>
-                        <div class="br"></div>
-                    </aside>
-                    <aside class="single_sidebar_widget popular_post_widget">
-                        <h3 class="widget_title">Bài viết xem nhiều</h3>
-                        <div class="media post_item">
-                            <img src="/img/blog/popular-post/post1.jpg" alt="post">
-                            <div class="media-body">
-                                <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
-                                <p>02 giờ trước</p>
-                            </div>
-                        </div>
-                        <div class="media post_item">
-                            <img src="/img/blog/popular-post/post2.jpg" alt="post">
-                            <div class="media-body">
-                                <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
-                                <p>02 giờ trước</p>
-                            </div>
-                        </div>
-                        <div class="media post_item">
-                            <img src="/img/blog/popular-post/post3.jpg" alt="post">
-                            <div class="media-body">
-                                <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
-                                <p>02 giờ trước</p>
-                            </div>
-                        </div>
-                        <div class="media post_item">
-                            <img src="/img/blog/popular-post/post4.jpg" alt="post">
-                            <div class="media-body">
-                                <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
-                                <p>02 giờ trước</p>
-                            </div>
-                        </div>
-                        <div class="br"></div>
-                    </aside>
-                    <aside class="single_sidebar_widget post_category_widget">
-                        <h4 class="widget_title">Danh mục</h4>
-                        <ul class="list cat-list">
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Lập trình ứng dụng</p>
-                                    <p>37</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Lập trình web</p>
-                                    <p>24</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Giải thuật</p>
-                                    <p>59</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Câu đố</p>
-                                    <p>29</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Công nghệ mới</p>
-                                    <p>15</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Trí tuệ nhân tạo</p>
-                                    <p>09</p>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="br"></div>
-                    </aside>
-                </div>
+            <div class="col-lg-12 mt-25">
+                <p>{{{Content}}}</p>
+                <br>
             </div>
         </div>
     </div>
+</div>
+{{#if comment}}
+
+        <div class="comments-area">
+            <h4>Các bình luận</h4>
+            {{#each comment}}
+                <div class="comment-list">
+                    <div class="single-comment justify-content-between d-flex">
+                        <div class="user justify-content-between d-flex">
+                            <div class="thumb">
+                                <img src="/img/blog/c2.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <h5><a href="#">{{this.hoten}}</a></h5>
+                                <br>
+                                <p class="comment">{{this.comment}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+{{/if}}
+{{#if isAuthenticated}}
+        <div class="comment-form">
+            <h4>Để lại bình luận của bạn</h4>
+            <form method="post" action="/postComment/{{detail.id}}">
+                {{#unless isAuthenticated}}
+                    <div class="row">
+                        <div class="form-group col-lg-6 col-md-6 name">
+                            <input placeholder="Nhập họ tên" type="text" class="form-control" name="hoten"
+                                   value="{{user.hoten}}">
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 email">
+                            <input placeholder="Nhập email" type="email" class="form-control" name="email"
+                                   value="{{user.email}}">
+                        </div>
+                    </div>
+                {{/unless}}
+                <div class="row">
+                            <textarea class="form-control mb-10" rows="5" name="comment" id="comment"
+                                      placeholder="Nhập bình luận"></textarea>
+                </div>
+                <br><br>
+                <button class="primary-btn submit_btn">Bình luận</button>
+            </form>
+        </div>
+{{/if}}
+{{#unless isAuthenticated}}
+        <br>
+        <div class="comment-form">
+            <a href="/login" class="primary-btn submit_btn">Đăng nhập để bình luận bài viết này</a>
+        </div>
+{{/unless}}
+</div>
+    <div class="col-lg-4">
+        <div class="blog_right_sidebar">
+            <aside class="single_sidebar_widget search_widget">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm bài viết">
+                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="lnr lnr-magnifier"></i></button>
+                                    </span>
+                </div><!-- /input-group -->
+                <div class="br"></div>
+            </aside>
+            <aside class="single_sidebar_widget author_widget">
+                <img class="author_img rounded-circle" src="/img/blog/author.png" alt="">
+                <h4>{{detail.hoten}}</h4>
+                <div class="social_icon">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                </div>
+                <div class="br"></div>
+            </aside>
+            <aside class="single_sidebar_widget popular_post_widget">
+                <h3 class="widget_title">Bài viết xem nhiều</h3>
+                <div class="media post_item">
+                    <img src="/img/blog/popular-post/post1.jpg" alt="post">
+                    <div class="media-body">
+                        <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
+                        <p>02 giờ trước</p>
+                    </div>
+                </div>
+                <div class="media post_item">
+                    <img src="/img/blog/popular-post/post2.jpg" alt="post">
+                    <div class="media-body">
+                        <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
+                        <p>02 giờ trước</p>
+                    </div>
+                </div>
+                <div class="media post_item">
+                    <img src="/img/blog/popular-post/post3.jpg" alt="post">
+                    <div class="media-body">
+                        <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
+                        <p>02 giờ trước</p>
+                    </div>
+                </div>
+                <div class="media post_item">
+                    <img src="/img/blog/popular-post/post4.jpg" alt="post">
+                    <div class="media-body">
+                        <a href="/single-blog"><h3>Tối ưu điểm google speed insights bằng 2 loại CDN</h3></a>
+                        <p>02 giờ trước</p>
+                    </div>
+                </div>
+                <div class="br"></div>
+            </aside>
+            <aside class="single_sidebar_widget post_category_widget">
+                <h4 class="widget_title">Danh mục</h4>
+                <ul class="list cat-list">
+                    <li>
+                        <a href="#" class="d-flex justify-content-between">
+                            <p>Lập trình ứng dụng</p>
+                            <p>37</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex justify-content-between">
+                            <p>Lập trình web</p>
+                            <p>24</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex justify-content-between">
+                            <p>Giải thuật</p>
+                            <p>59</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex justify-content-between">
+                            <p>Câu đố</p>
+                            <p>29</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex justify-content-between">
+                            <p>Công nghệ mới</p>
+                            <p>15</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex justify-content-between">
+                            <p>Trí tuệ nhân tạo</p>
+                            <p>09</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="br"></div>
+            </aside>
+        </div>
+    </div>
+</div>
+</div>
 </section>
+<input id="idUser" hidden value="{{user.id}}"></input>
+<input id="idBaiDang" hidden value="{{detail.id}}"></input>
 <!--================Blog Area =================-->
         

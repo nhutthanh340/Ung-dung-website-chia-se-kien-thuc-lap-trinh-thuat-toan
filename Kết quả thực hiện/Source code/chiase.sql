@@ -30,7 +30,7 @@ CREATE TABLE `baidang` (
   PRIMARY KEY (`id`),
   KEY `fk_baidang_baiviet` (`idbaiviet`),
   CONSTRAINT `fk_baidang_baiviet` FOREIGN KEY (`idbaiviet`) REFERENCES `baiviet` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +63,7 @@ CREATE TABLE `baiviet` (
   KEY `fk_baiviet_theloaibaiviet` (`idtheloaibaiviet`),
   CONSTRAINT `fk_baiviet_nguoidung` FOREIGN KEY (`idnguoigui`) REFERENCES `nguoidung` (`id`),
   CONSTRAINT `fk_baiviet_theloaibaiviet` FOREIGN KEY (`idtheloaibaiviet`) REFERENCES `theloaibaiviet` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -93,7 +93,7 @@ CREATE TABLE `binhluan` (
   KEY `_2` (`idnguoidung`,`idbaidang`),
   CONSTRAINT `fk_binhluan_baidang` FOREIGN KEY (`idbaidang`) REFERENCES `baidang` (`id`),
   CONSTRAINT `fk_binhluan_nguoidung` FOREIGN KEY (`idnguoidung`) REFERENCES `nguoidung` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -145,7 +145,7 @@ CREATE TABLE `loainguoidung` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `tenloai` tinytext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -203,7 +203,7 @@ CREATE TABLE `nguoidung` (
   PRIMARY KEY (`id`),
   KEY `fk_nguoidung_loainguoidung` (`idloainguoidung`),
   CONSTRAINT `fk_nguoidung_loainguoidung` FOREIGN KEY (`idloainguoidung`) REFERENCES `loainguoidung` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -227,7 +227,7 @@ CREATE TABLE `theloaibaiviet` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `tentheloai` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

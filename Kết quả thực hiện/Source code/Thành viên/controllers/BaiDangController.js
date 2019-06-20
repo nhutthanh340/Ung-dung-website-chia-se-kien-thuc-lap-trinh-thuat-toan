@@ -1,5 +1,5 @@
 const TheLoai = require('../models/TheLoaiBaiViet');
-const BinhLuan = require('../models/BinhLuan');
+const LuotThich = require('../models/LuotThich');
 const fs = require('fs');
 
 const BaiDang = require('../models/BaiDang');
@@ -16,15 +16,22 @@ exports.ShowPostByType = async function (req, res) {
 };
 
 exports.DetailBlog = async function (req, res) {
-    const Content = await fs.readFileSync('NoiDungBaiViet/1.html');
     const type = await TheLoai.readAll();
     const idPost = req.params.id;
-
+    let likes = await LuotThich.readAll();
     const detail_1 = await BaiDang.readDetailBlogById(idPost);
     const detail = JSON.parse(JSON.stringify(detail_1[0]));
 
+    const Content = await fs.readFileSync(detail.noidung);
+    const Summary = await fs.readFileSync(detail.tomtat);
+
+    let coThich=0;
+    try {
+        coThich = await LuotThich.read(req.user.id,detail.id);
+    }catch (e) {}
+
     const comment = await BaiDang.readTableCommentByIdPost(idPost);
-    res.render('single-blog', {user: req.user, type, detail, Content, comment});
+    res.render('single-blog', {user: req.user, type, detail, Content,Summary, comment,likes,coThich});
 };
 
 exports.searchBlog = async function (req, res) {

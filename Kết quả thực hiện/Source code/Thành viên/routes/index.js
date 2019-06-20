@@ -6,6 +6,8 @@ const BaiDang = require("../controllers/BaiDangController");
 const Contact = require("../controllers/LienHeController");
 const User = require("../controllers/UserController");
 const BaiViet = require("../controllers/BaiVietController");
+const LuotThich = require('../controllers/LuotThichController');
+
 
 router.get('/baidang/:id', BaiDang.ShowPostByType);
 router.get('/index', HomePage.HomePage);
@@ -28,5 +30,6 @@ router.post('/signup', User.registerPost);
 router.post('/checkUserName', User.CheckUserName);
 router.post('/updateUser/:id', User.PostUpdateUserInformation);
 router.post('/cancelFollow', User.CancelFollow);
+router.post('/LuotThich/CapNhat',LuotThich.CapNhat);
 
 module.exports = router;

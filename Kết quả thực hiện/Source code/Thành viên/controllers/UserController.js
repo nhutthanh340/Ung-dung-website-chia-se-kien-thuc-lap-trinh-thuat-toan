@@ -1,7 +1,8 @@
+require('dotenv').config();
 const bcrypt = require('bcrypt');
 const passport = require('passport');
 const User = require('../models/NguoiDung');
-const saltRounds = 10;
+const saltRounds = parseInt(process.env.SaltRounds);
 const TheLoai = require('../models/TheLoaiBaiViet');
 const nodeMailer = require('nodemailer');
 const querystring = require('querystring');
@@ -24,8 +25,8 @@ let transporter = nodeMailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: 'dien email vao day',
-        pass: 'dien mat khau vao day'
+        user: process.env.EmailServer,
+        pass: process.env.PassServer
     }
 });
 
@@ -47,16 +48,21 @@ exports.FormUpdate = async function (req, res) {
 
 exports.registerPost = async (req, res) => {
     req.body.idloainguoidung = 1;
+    console.log(req.body);
     req.body.matkhau = await bcrypt.hash(req.body.matkhau, saltRounds);
+
+    console.log(saltRounds);
     const str = querystring.stringify(req.body);
+
     readHTMLFile('views/email.html', function (err, html) {
         const template = handlebars.compile(html);
         const replacements = {
-            URL: "http://localhost:3000/Verify/" + str
+            URL: process.env.Host + "Verify/" + str
         };
+
         const htmlToSend = template(replacements);
         let mailOptions = {
-            from: 'dien email vao day', // sender address
+            from: process.env.EmailServer, // sender address
             to: req.body.email, // list of receivers
             subject: 'Kích hoạt tài khoản LearnIT', // Subject line
             html: htmlToSend // html body
