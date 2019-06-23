@@ -1,13 +1,5 @@
 const Connection = require('../models/MySQL').connection;
 
-exports.get1 = function () {
-    let script = document.createElement("script");
-    script.src = "//cdn.ckeditor.com/4.11.4/full/ckeditor.js";
-    let a = CKEDITOR.instances["noidung"].getData();
-    console.log("func: " + a);
-    return a;
-};
-
 exports.insert = async function (data) {
     return await Connection.promise().query('insert into baiviet set ?', data);
 };

@@ -22,16 +22,14 @@ exports.DetailBlog = async function (req, res) {
     const detail_1 = await BaiDang.readDetailBlogById(idPost);
     const detail = JSON.parse(JSON.stringify(detail_1[0]));
 
-    const Content = await fs.readFileSync(detail.noidung);
-    const Summary = await fs.readFileSync(detail.tomtat);
-
-    let coThich=0;
+    let coThich = 0;
     try {
-        coThich = await LuotThich.read(req.user.id,detail.id);
-    }catch (e) {}
+        coThich = await LuotThich.read(req.user.id, detail.id);
+    } catch (e) {
+    }
 
     const comment = await BaiDang.readTableCommentByIdPost(idPost);
-    res.render('single-blog', {user: req.user, type, detail, Content,Summary, comment,likes,coThich});
+    res.render('single-blog', {user: req.user, type, detail, comment, likes, coThich});
 };
 
 exports.searchBlog = async function (req, res) {

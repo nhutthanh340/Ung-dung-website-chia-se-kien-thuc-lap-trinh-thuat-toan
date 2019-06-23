@@ -1,7 +1,7 @@
 const Connection = require('../model/MySQL').connection;
 
 exports.readAllPost = async function () {
-    const sql = 'select BV.id, BV.trangthai, BV.tenbaiviet, ND.hoten, TL.tentheloai from nguoidung ND, baiviet BV, theloaibaiviet TL where BV.idtheloaibaiviet = TL.id and bv.idnguoigui = ND.id';
+    const sql = 'select BV.id, BV.trangthai, BV.tenbaiviet, ND.hoten, TL.tentheloai from nguoidung ND, baiviet BV, theloaibaiviet TL where BV.idtheloaibaiviet = TL.id and BV.idnguoigui = ND.id';
     const result = await Connection.promise().query(sql);
     return result[0];
 };

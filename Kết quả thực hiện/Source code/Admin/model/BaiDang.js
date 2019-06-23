@@ -2,9 +2,7 @@ const Connection = require('../model/MySQL').connection;
 
 exports.insertBaiDang = async function (id, date) {
     const sqlInsertBlog = 'INSERT INTO baidang(idbaiviet,ngaydang) VALUES(?,?)';
-    const sqlInsertLike = 'INSERT INTO luotthich(idbv,soluong) VALUES(?,?)';
     await Connection.promise().query(sqlInsertBlog, [id, date]);
-    await Connection.promise().query(sqlInsertLike, [id, 0]);
 };
 
 exports.readByTypePost = async function (id) {
@@ -33,9 +31,6 @@ exports.readContentPostByIdBlog = async function (id) {
 };
 
 exports.deleteBlog = async function (idBD, idBV) {
-    const sqlLike = "delete from luotthich where idbv = ?";
-    const resultLike = await Connection.promise().query(sqlLike, idBV);
-
     const sqlCmt = "delete from binhluan where idbaidang = ?";
     const resultCmt = await Connection.promise().query(sqlCmt, idBD);
 

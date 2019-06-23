@@ -82,7 +82,7 @@
                                     <img src="img/blog/main-blog/m-blog-1.jpg" alt="">
                                     <div class="blog_details">
                                         <a href="/detail/{{this.id}}"><h2>{{this.tenbaiviet}}</h2></a>
-                                        <p>{{this.tomtat}}</p>
+                                        <p>{{{this.tomtat}}}</p>
                                         <a href="/detail/{{this.id}}" class="white_bg_btn">Xem bài viết</a>
                                     </div>
                                 </div>
@@ -96,7 +96,8 @@
                     <aside class="single_sidebar_widget search_widget">
                         <div class="input-group">
                             <form action="/searchBlog" method="post">
-                                <input name="nameSearch" type="text" class="form-control" placeholder="Nhập tên bài viết">
+                                <input name="nameSearch" type="text" class="form-control"
+                                       placeholder="Nhập tên bài viết">
                                 <button style="background: #32CD32" class="btn btn-default">Tìm kiếm</button>
                             </form>
                         </div>
